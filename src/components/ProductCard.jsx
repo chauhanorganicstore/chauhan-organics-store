@@ -1,25 +1,35 @@
+﻿/**
+ * src/components/ProductCard.jsx
+ */
 import React from "react";
+import { addToCart } from "../utils/cart";
 
-export default function ProductCard({p}){
-  const waNumber = "919306328256"; // change if needed
-  const msg = encodeURIComponent(`Hi, I want to buy *${p.title}* (ID: ${p.id}) - ${p.price}`);
-  const waLink = `https://wa.me/${waNumber}?text=${msg}`;
+export default function ProductCard({ product }) {
+  const imgSrc = product.image || "/images/placeholder.svg";
+
+  function handleAdd() {
+    addToCart(product);
+    alert(`${product.title} added to cart`);
+  }
 
   return (
-    <article className="card" aria-label={p.title}>
-      <img className="card-img" src={p.img} alt={p.title} />
-      <div className="card-body">
-        <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
-          <div style={{fontWeight:800}}>{p.title}</div>
-          <div className="badge">{p.category}</div>
-        </div>
-        <div style={{fontSize:13,color:"#666",marginTop:6}}>{p.desc?.slice(0,120)}</div>
-        <div className="price">{p.price}</div>
-        <div className="actions">
-          <button className="btn btn-view" onClick={()=>alert(p.desc)}>View</button>
-          <a className="btn btn-buy" href={waLink} target="_blank" rel="noreferrer">Buy</a>
+    <div style={{ background:"#fff", borderRadius:12, boxShadow:"0 4px 10px rgba(0,0,0,0.04)", overflow:"hidden" }}>
+      <img
+        src={imgSrc}
+        alt={product.title}
+        onError={(e) => { e.currentTarget.src = "/images/placeholder.svg"; }}
+        style={{ width: "100%", height: 180, objectFit: "cover", display:"block" }}
+      />
+      <div style={{ padding: 12 }}>
+        <h3 style={{ margin: "0 0 6px" }}>{product.title}</h3>
+        <p style={{ margin: "0 0 8px", color: "#666" }}>{product.description}</p>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div style={{ fontWeight: 700 }}>₹{product.price} / {product.unit}</div>
+          <div>
+            <button onClick={handleAdd} style={{ padding:"6px 10px", borderRadius:8, cursor:"pointer" }}>Buy</button>
+          </div>
         </div>
       </div>
-    </article>
-  )
+    </div>
+  );
 }
