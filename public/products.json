@@ -1,129 +1,4317 @@
 ﻿[
-  {
-    "id": "organic-jaggery-powder",
-    "title": "Organic Jaggery Powder",
-    "price": 240,
-    "unit": "500g",
-    "category": "Sweeteners",
-    "image": "/images/placeholder-hero.jpg",
-    "description": "Pure organic jaggery."
-  },
-  {
-    "id": "cold-pressed-mustard-oil",
-    "title": "Cold-Pressed Mustard Oil",
-    "price": 350,
-    "unit": "1L",
-    "category": "Oils",
-    "image": "/images/placeholder-hero.jpg",
-    "description": "Cold-pressed from organic mustard seeds."
-  },
-  {
-    "id": "organic-a2-ghee",
-    "title": "Organic A2 Ghee",
-    "price": 950,
-    "unit": "500ml",
-    "category": "Dairy",
-    "image": "/images/placeholder-hero.jpg",
-    "description": "Premium A2 bilona ghee from grass-fed cows."
-  },
-  {
-    "id": "organic-jaggery-cube",
-    "title": "Organic Jaggery Cube",
-    "price": 180,
-    "unit": "250g",
-    "category": "Sweeteners",
-    "image": "/images/placeholder-hero.jpg",
-    "description": "Handmade organic jaggery cubes."
-  },
-  {
-    "id": "organic-honey-500g",
-    "title": "Organic Wildflower Honey",
-    "price": 420,
-    "unit": "500g",
-    "category": "Sweeteners",
-    "image": "/images/placeholder-hero.jpg",
-    "description": "Pure wildflower honey — unprocessed, raw and jarred locally."
-  },
-  {
-    "id": "multi-grain-atta-1kg",
-    "title": "Multi-Grain Atta (Whole)",
-    "price": 160,
-    "unit": "1kg",
-    "category": "Flour & Grains",
-    "image": "/images/placeholder-hero.jpg",
-    "description": "Stone-ground multi-grain atta with wheat, ragi, jowar & bajra."
-  },
-  {
-    "id": "sendha-namak-500g",
-    "title": "Sendha Namak (Rock Salt)",
-    "price": 60,
-    "unit": "500g",
-    "category": "Salt & Spices",
-    "image": "/images/placeholder-hero.jpg",
-    "description": "Natural rock salt — mineral rich, unrefined and hand-packed."
-  },
-  {
-    "id": "turmeric-250g",
-    "title": "Organic Turmeric Powder",
-    "price": 140,
-    "unit": "250g",
-    "category": "Spices",
-    "image": "/images/placeholder-hero.jpg",
-    "description": "High-curcumin turmeric, sun-dried and finely powdered."
-  },
-  {
-    "id": "ginger-garlic-pickle-300g",
-    "title": "Ginger Garlic Pickle (Homestyle)",
-    "price": 180,
-    "unit": "300g",
-    "category": "Pickles & Chutneys",
-    "image": "/images/placeholder-hero.jpg",
-    "description": "Homestyle achar with mustard oil and traditional spices."
-  },
-  {
-    "id": "coconut-oil-500ml",
-    "title": "Cold-Pressed Coconut Oil",
-    "price": 420,
-    "unit": "500ml",
-    "category": "Oils",
-    "image": "/images/placeholder-hero.jpg",
-    "description": "Unrefined virgin coconut oil — multi-purpose for cooking & skin."
-  },
-  {
-    "id": "ragi-flour-500g",
-    "title": "Finger Millet (Ragi) Flour",
-    "price": 95,
-    "unit": "500g",
-    "category": "Flour & Grains",
-    "image": "/images/placeholder-hero.jpg",
-    "description": "Nutrient dense ragi flour — ideal for porridge and rotis."
-  },
-  {
-    "id": "herbal-tea-50g",
-    "title": "Herbal Detox Tea Blend",
-    "price": 199,
-    "unit": "50g",
-    "category": "Beverages & Tea",
-    "image": "/images/placeholder-hero.jpg",
-    "description": "Loose leaf blend — tulsi, ginger, cinnamon and lemongrass."
-  },
-  {
-    "id": "mustard-seeds-250g",
-    "title": "Organic Mustard Seeds",
-    "price": 120,
-    "unit": "250g",
-    "category": "Seeds & Staples",
-    "image": "/images/placeholder-hero.jpg",
-    "description": "Small brown mustard seeds for pickling and tempering."
-  },
-  {
-    "id": "rajgira-flour-500g",
-    "title": "Rajgira Flour (Amaranth)",
-    "price": 210,
-    "unit": "500g",
-    "category": "Flour & Grains",
-    "image": "/images/placeholder-hero.jpg",
-    "description": "Gluten-free amaranth flour — good for fasting recipes and baking."
-  }
+    {
+        "id":  "organic-jaggery-powder",
+        "title":  "Organic Jaggery Powder",
+        "price":  248,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure organic jaggery. Sourced near Madhya Pradesh. Certified: EU Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "local",
+                     "a2"
+                 ],
+        "stock":  116,
+        "sku":  "SKU-712338",
+        "rating":  4.9
+    },
+    {
+        "id":  "cold-pressed-mustard-oil",
+        "title":  "Cold-Pressed Mustard Oil",
+        "price":  338,
+        "unit":  "1L",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Cold-pressed from organic mustard seeds. Sourced near Karnataka. Certified: India Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "vegan",
+                     "unprocessed",
+                     "raw",
+                     "gluten-free"
+                 ],
+        "stock":  79,
+        "sku":  "SKU-568629",
+        "rating":  4.6
+    },
+    {
+        "id":  "organic-a2-ghee",
+        "title":  "Organic A2 Ghee",
+        "price":  952,
+        "unit":  "500ml",
+        "category":  "Dairy",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Premium A2 bilona ghee from grass-fed cows. Sourced near Uttarakhand. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  "vegan",
+        "stock":  109,
+        "sku":  "SKU-869965",
+        "rating":  4.7
+    },
+    {
+        "id":  "organic-jaggery-cube",
+        "title":  "Organic Jaggery Cube",
+        "price":  179,
+        "unit":  "250g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Handmade organic jaggery cubes. Sourced near Jaipur, Rajasthan. Certified: USDA Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "organic",
+                     "vegan"
+                 ],
+        "stock":  10,
+        "sku":  "SKU-265118",
+        "rating":  4.1
+    },
+    {
+        "id":  "organic-wildflower-honey",
+        "title":  "Organic Wildflower Honey",
+        "price":  431,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure wildflower honey — unprocessed, raw and jarred locally. Sourced near Jaipur, Rajasthan. Certified: India Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "local"
+                 ],
+        "stock":  15,
+        "sku":  "SKU-382094",
+        "rating":  4.2
+    },
+    {
+        "id":  "multi-grain-atta-whole",
+        "title":  "Multi-Grain Atta (Whole)",
+        "price":  165,
+        "unit":  "1kg",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Stone-ground multi-grain atta with wheat, ragi, jowar \u0026 bajra. Sourced near Maharashtra. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "local",
+                     "handmade"
+                 ],
+        "stock":  46,
+        "sku":  "SKU-239942",
+        "rating":  4.1
+    },
+    {
+        "id":  "sendha-namak-rock-salt",
+        "title":  "Sendha Namak (Rock Salt)",
+        "price":  61,
+        "unit":  "500g",
+        "category":  "Salt \u0026 Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Natural rock salt — mineral rich, unrefined and hand-packed. Sourced near Punjab. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "vegan"
+                 ],
+        "stock":  9,
+        "sku":  "SKU-742597",
+        "rating":  4
+    },
+    {
+        "id":  "organic-turmeric-powder",
+        "title":  "Organic Turmeric Powder",
+        "price":  135,
+        "unit":  "250g",
+        "category":  "Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "High-curcumin turmeric, sun-dried and finely powdered. Sourced near Maharashtra. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "organic",
+                     "local",
+                     "a2"
+                 ],
+        "stock":  30,
+        "sku":  "SKU-332911",
+        "rating":  4.5
+    },
+    {
+        "id":  "ginger-garlic-pickle-homestyle",
+        "title":  "Ginger Garlic Pickle (Homestyle)",
+        "price":  186,
+        "unit":  "300g",
+        "category":  "Pickles \u0026 Chutneys",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Homestyle achar with mustard oil and traditional spices. Sourced near Himachal Pradesh. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "vegan",
+                     "local"
+                 ],
+        "stock":  103,
+        "sku":  "SKU-545218",
+        "rating":  4.4
+    },
+    {
+        "id":  "cold-pressed-coconut-oil",
+        "title":  "Cold-Pressed Coconut Oil",
+        "price":  417,
+        "unit":  "500ml",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Unrefined virgin coconut oil — multi-purpose for cooking \u0026 skin. Sourced near Punjab. Certified: EU Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "vegan",
+                     "local"
+                 ],
+        "stock":  12,
+        "sku":  "SKU-609654",
+        "rating":  4.4
+    },
+    {
+        "id":  "finger-millet-ragi-flour",
+        "title":  "Finger Millet (Ragi) Flour",
+        "price":  97,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Nutrient dense ragi flour — ideal for porridge and rotis. Sourced near Punjab. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "organic"
+                 ],
+        "stock":  30,
+        "sku":  "SKU-844130",
+        "rating":  4.9
+    },
+    {
+        "id":  "herbal-detox-tea-blend",
+        "title":  "Herbal Detox Tea Blend",
+        "price":  201,
+        "unit":  "50g",
+        "category":  "Beverages \u0026 Tea",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Loose leaf blend — tulsi, ginger, cinnamon and lemongrass. Sourced near Maharashtra. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "organic",
+                     "unprocessed",
+                     "vegan",
+                     "handmade"
+                 ],
+        "stock":  20,
+        "sku":  "SKU-806818",
+        "rating":  4.7
+    },
+    {
+        "id":  "organic-mustard-seeds",
+        "title":  "Organic Mustard Seeds",
+        "price":  118,
+        "unit":  "250g",
+        "category":  "Seeds \u0026 Staples",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Small brown mustard seeds for pickling and tempering. Sourced near Uttarakhand. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "local",
+                     "organic"
+                 ],
+        "stock":  51,
+        "sku":  "SKU-939008",
+        "rating":  4.5
+    },
+    {
+        "id":  "rajgira-flour-amaranth",
+        "title":  "Rajgira Flour (Amaranth)",
+        "price":  210,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Gluten-free amaranth flour — good for fasting recipes and baking. Sourced near Punjab. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "handmade",
+                     "raw",
+                     "unprocessed"
+                 ],
+        "stock":  58,
+        "sku":  "SKU-726470",
+        "rating":  4.5
+    },
+    {
+        "id":  "organic-jaggery-powder-var-2",
+        "title":  "Organic Jaggery Powder (Var 2)",
+        "price":  239,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure organic jaggery. Sourced near Uttarakhand. Certified: Jaivik Bharat.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "local",
+                     "handmade"
+                 ],
+        "stock":  48,
+        "sku":  "SKU-895981",
+        "rating":  4.3
+    },
+    {
+        "id":  "cold-pressed-mustard-oil-var-2",
+        "title":  "Cold-Pressed Mustard Oil (Var 2)",
+        "price":  361,
+        "unit":  "1L",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Cold-pressed from organic mustard seeds. Sourced near Jaipur, Rajasthan. Certified: Jaivik Bharat.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "unprocessed",
+                     "cold-pressed",
+                     "raw"
+                 ],
+        "stock":  95,
+        "sku":  "SKU-666202",
+        "rating":  4
+    },
+    {
+        "id":  "organic-a2-ghee-var-2",
+        "title":  "Organic A2 Ghee (Var 2)",
+        "price":  952,
+        "unit":  "500ml",
+        "category":  "Dairy",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Premium A2 bilona ghee from grass-fed cows. Sourced near Madhya Pradesh. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "vegan",
+                     "organic",
+                     "unprocessed"
+                 ],
+        "stock":  115,
+        "sku":  "SKU-894563",
+        "rating":  4.4
+    },
+    {
+        "id":  "organic-jaggery-cube-var-2",
+        "title":  "Organic Jaggery Cube (Var 2)",
+        "price":  178,
+        "unit":  "250g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Handmade organic jaggery cubes. Sourced near Jaipur, Rajasthan. Certified: EU Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "gluten-free"
+                 ],
+        "stock":  2,
+        "sku":  "SKU-320837",
+        "rating":  4.2
+    },
+    {
+        "id":  "organic-wildflower-honey-var-2",
+        "title":  "Organic Wildflower Honey (Var 2)",
+        "price":  425,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure wildflower honey — unprocessed, raw and jarred locally. Sourced near Uttarakhand. Certified: EU Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "cold-pressed"
+                 ],
+        "stock":  64,
+        "sku":  "SKU-171803",
+        "rating":  4.4
+    },
+    {
+        "id":  "multi-grain-atta-whole-var-2",
+        "title":  "Multi-Grain Atta (Whole) (Var 2)",
+        "price":  163,
+        "unit":  "1kg",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Stone-ground multi-grain atta with wheat, ragi, jowar \u0026 bajra. Sourced near Karnataka. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "local"
+                 ],
+        "stock":  117,
+        "sku":  "SKU-693040",
+        "rating":  4.6
+    },
+    {
+        "id":  "sendha-namak-rock-salt-var-2",
+        "title":  "Sendha Namak (Rock Salt) (Var 2)",
+        "price":  62,
+        "unit":  "500g",
+        "category":  "Salt \u0026 Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Natural rock salt — mineral rich, unrefined and hand-packed. Sourced near Maharashtra. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "organic"
+                 ],
+        "stock":  24,
+        "sku":  "SKU-848224",
+        "rating":  4.6
+    },
+    {
+        "id":  "organic-turmeric-powder-var-2",
+        "title":  "Organic Turmeric Powder (Var 2)",
+        "price":  144,
+        "unit":  "250g",
+        "category":  "Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "High-curcumin turmeric, sun-dried and finely powdered. Sourced near Jaipur, Rajasthan. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "gluten-free"
+                 ],
+        "stock":  91,
+        "sku":  "SKU-201639",
+        "rating":  4.9
+    },
+    {
+        "id":  "ginger-garlic-pickle-homestyle-var-2",
+        "title":  "Ginger Garlic Pickle (Homestyle) (Var 2)",
+        "price":  173,
+        "unit":  "300g",
+        "category":  "Pickles \u0026 Chutneys",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Homestyle achar with mustard oil and traditional spices. Sourced near Uttarakhand. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "local",
+                     "cold-pressed"
+                 ],
+        "stock":  16,
+        "sku":  "SKU-397224",
+        "rating":  4
+    },
+    {
+        "id":  "cold-pressed-coconut-oil-var-2",
+        "title":  "Cold-Pressed Coconut Oil (Var 2)",
+        "price":  426,
+        "unit":  "500ml",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Unrefined virgin coconut oil — multi-purpose for cooking \u0026 skin. Sourced near Uttarakhand. Certified: USDA Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "vegan",
+                     "organic",
+                     "local"
+                 ],
+        "stock":  25,
+        "sku":  "SKU-305665",
+        "rating":  4.5
+    },
+    {
+        "id":  "finger-millet-ragi-flour-var-2",
+        "title":  "Finger Millet (Ragi) Flour (Var 2)",
+        "price":  93,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Nutrient dense ragi flour — ideal for porridge and rotis. Sourced near Uttarakhand. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "organic",
+                     "vegan",
+                     "handmade"
+                 ],
+        "stock":  86,
+        "sku":  "SKU-264819",
+        "rating":  4
+    },
+    {
+        "id":  "herbal-detox-tea-blend-var-2",
+        "title":  "Herbal Detox Tea Blend (Var 2)",
+        "price":  202,
+        "unit":  "50g",
+        "category":  "Beverages \u0026 Tea",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Loose leaf blend — tulsi, ginger, cinnamon and lemongrass. Sourced near Maharashtra. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "vegan"
+                 ],
+        "stock":  114,
+        "sku":  "SKU-352710",
+        "rating":  4.5
+    },
+    {
+        "id":  "organic-mustard-seeds-var-2",
+        "title":  "Organic Mustard Seeds (Var 2)",
+        "price":  116,
+        "unit":  "250g",
+        "category":  "Seeds \u0026 Staples",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Small brown mustard seeds for pickling and tempering. Sourced near Madhya Pradesh. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "cold-pressed",
+                     "vegan",
+                     "local"
+                 ],
+        "stock":  108,
+        "sku":  "SKU-395576",
+        "rating":  4.8
+    },
+    {
+        "id":  "rajgira-flour-amaranth-var-2",
+        "title":  "Rajgira Flour (Amaranth) (Var 2)",
+        "price":  213,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Gluten-free amaranth flour — good for fasting recipes and baking. Sourced near Karnataka. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "vegan",
+                     "handmade",
+                     "organic"
+                 ],
+        "stock":  44,
+        "sku":  "SKU-440857",
+        "rating":  4.8
+    },
+    {
+        "id":  "organic-jaggery-powder-var-3",
+        "title":  "Organic Jaggery Powder (Var 3)",
+        "price":  239,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure organic jaggery. Sourced near Uttarakhand. Certified: India Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "organic",
+                     "a2",
+                     "cold-pressed"
+                 ],
+        "stock":  65,
+        "sku":  "SKU-306676",
+        "rating":  4.7
+    },
+    {
+        "id":  "cold-pressed-mustard-oil-var-3",
+        "title":  "Cold-Pressed Mustard Oil (Var 3)",
+        "price":  340,
+        "unit":  "1L",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Cold-pressed from organic mustard seeds. Sourced near Punjab. Certified: Jaivik Bharat.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "a2",
+                     "unprocessed"
+                 ],
+        "stock":  68,
+        "sku":  "SKU-937014",
+        "rating":  4.3
+    },
+    {
+        "id":  "organic-a2-ghee-var-3",
+        "title":  "Organic A2 Ghee (Var 3)",
+        "price":  981,
+        "unit":  "500ml",
+        "category":  "Dairy",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Premium A2 bilona ghee from grass-fed cows. Sourced near Karnataka. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "raw"
+                 ],
+        "stock":  8,
+        "sku":  "SKU-386446",
+        "rating":  4.3
+    },
+    {
+        "id":  "organic-jaggery-cube-var-3",
+        "title":  "Organic Jaggery Cube (Var 3)",
+        "price":  185,
+        "unit":  "250g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Handmade organic jaggery cubes. Sourced near Uttarakhand. Certified: Jaivik Bharat.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "organic",
+                     "local",
+                     "a2"
+                 ],
+        "stock":  29,
+        "sku":  "SKU-312865",
+        "rating":  5
+    },
+    {
+        "id":  "organic-wildflower-honey-var-3",
+        "title":  "Organic Wildflower Honey (Var 3)",
+        "price":  436,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure wildflower honey — unprocessed, raw and jarred locally. Sourced near Karnataka. Certified: Jaivik Bharat.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "local",
+                     "unprocessed"
+                 ],
+        "stock":  27,
+        "sku":  "SKU-468599",
+        "rating":  4.7
+    },
+    {
+        "id":  "multi-grain-atta-whole-var-3",
+        "title":  "Multi-Grain Atta (Whole) (Var 3)",
+        "price":  158,
+        "unit":  "1kg",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Stone-ground multi-grain atta with wheat, ragi, jowar \u0026 bajra. Sourced near Karnataka. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "raw",
+                     "unprocessed"
+                 ],
+        "stock":  9,
+        "sku":  "SKU-487904",
+        "rating":  4.6
+    },
+    {
+        "id":  "sendha-namak-rock-salt-var-3",
+        "title":  "Sendha Namak (Rock Salt) (Var 3)",
+        "price":  60,
+        "unit":  "500g",
+        "category":  "Salt \u0026 Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Natural rock salt — mineral rich, unrefined and hand-packed. Sourced near Jaipur, Rajasthan. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "local"
+                 ],
+        "stock":  22,
+        "sku":  "SKU-460236",
+        "rating":  4.6
+    },
+    {
+        "id":  "organic-turmeric-powder-var-3",
+        "title":  "Organic Turmeric Powder (Var 3)",
+        "price":  141,
+        "unit":  "250g",
+        "category":  "Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "High-curcumin turmeric, sun-dried and finely powdered. Sourced near Karnataka. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "organic",
+                     "a2",
+                     "gluten-free",
+                     "local"
+                 ],
+        "stock":  30,
+        "sku":  "SKU-322050",
+        "rating":  4.9
+    },
+    {
+        "id":  "ginger-garlic-pickle-homestyle-var-3",
+        "title":  "Ginger Garlic Pickle (Homestyle) (Var 3)",
+        "price":  181,
+        "unit":  "300g",
+        "category":  "Pickles \u0026 Chutneys",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Homestyle achar with mustard oil and traditional spices. Sourced near Karnataka. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "vegan",
+                     "raw"
+                 ],
+        "stock":  44,
+        "sku":  "SKU-468710",
+        "rating":  4.1
+    },
+    {
+        "id":  "cold-pressed-coconut-oil-var-3",
+        "title":  "Cold-Pressed Coconut Oil (Var 3)",
+        "price":  405,
+        "unit":  "500ml",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Unrefined virgin coconut oil — multi-purpose for cooking \u0026 skin. Sourced near Madhya Pradesh. Certified: EU Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "vegan",
+                     "a2"
+                 ],
+        "stock":  26,
+        "sku":  "SKU-270998",
+        "rating":  3.9
+    },
+    {
+        "id":  "finger-millet-ragi-flour-var-3",
+        "title":  "Finger Millet (Ragi) Flour (Var 3)",
+        "price":  94,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Nutrient dense ragi flour — ideal for porridge and rotis. Sourced near Maharashtra. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "cold-pressed"
+                 ],
+        "stock":  4,
+        "sku":  "SKU-207236",
+        "rating":  4.2
+    },
+    {
+        "id":  "herbal-detox-tea-blend-var-3",
+        "title":  "Herbal Detox Tea Blend (Var 3)",
+        "price":  202,
+        "unit":  "50g",
+        "category":  "Beverages \u0026 Tea",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Loose leaf blend — tulsi, ginger, cinnamon and lemongrass. Sourced near Karnataka. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "organic",
+                     "unprocessed",
+                     "gluten-free"
+                 ],
+        "stock":  31,
+        "sku":  "SKU-268206",
+        "rating":  3.9
+    },
+    {
+        "id":  "organic-mustard-seeds-var-3",
+        "title":  "Organic Mustard Seeds (Var 3)",
+        "price":  121,
+        "unit":  "250g",
+        "category":  "Seeds \u0026 Staples",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Small brown mustard seeds for pickling and tempering. Sourced near Himachal Pradesh. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "handmade"
+                 ],
+        "stock":  110,
+        "sku":  "SKU-456751",
+        "rating":  4.6
+    },
+    {
+        "id":  "rajgira-flour-amaranth-var-3",
+        "title":  "Rajgira Flour (Amaranth) (Var 3)",
+        "price":  218,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Gluten-free amaranth flour — good for fasting recipes and baking. Sourced near Himachal Pradesh. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "raw",
+                     "local"
+                 ],
+        "stock":  97,
+        "sku":  "SKU-829771",
+        "rating":  4.6
+    },
+    {
+        "id":  "organic-jaggery-powder-var-4",
+        "title":  "Organic Jaggery Powder (Var 4)",
+        "price":  234,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure organic jaggery. Sourced near Punjab. Certified: EU Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "vegan"
+                 ],
+        "stock":  79,
+        "sku":  "SKU-614715",
+        "rating":  4.2
+    },
+    {
+        "id":  "cold-pressed-mustard-oil-var-4",
+        "title":  "Cold-Pressed Mustard Oil (Var 4)",
+        "price":  351,
+        "unit":  "1L",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Cold-pressed from organic mustard seeds. Sourced near Jaipur, Rajasthan. Certified: EU Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "a2",
+                     "raw"
+                 ],
+        "stock":  65,
+        "sku":  "SKU-579244",
+        "rating":  4.1
+    },
+    {
+        "id":  "organic-a2-ghee-var-4",
+        "title":  "Organic A2 Ghee (Var 4)",
+        "price":  984,
+        "unit":  "500ml",
+        "category":  "Dairy",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Premium A2 bilona ghee from grass-fed cows. Sourced near Uttarakhand. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "vegan",
+                     "handmade"
+                 ],
+        "stock":  56,
+        "sku":  "SKU-222624",
+        "rating":  3.8
+    },
+    {
+        "id":  "organic-jaggery-cube-var-4",
+        "title":  "Organic Jaggery Cube (Var 4)",
+        "price":  175,
+        "unit":  "250g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Handmade organic jaggery cubes. Sourced near Uttarakhand. Certified: Jaivik Bharat.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "raw",
+                     "unprocessed",
+                     "vegan"
+                 ],
+        "stock":  84,
+        "sku":  "SKU-933454",
+        "rating":  5
+    },
+    {
+        "id":  "organic-wildflower-honey-var-4",
+        "title":  "Organic Wildflower Honey (Var 4)",
+        "price":  424,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure wildflower honey — unprocessed, raw and jarred locally. Sourced near Himachal Pradesh. Certified: USDA Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "raw",
+                     "organic"
+                 ],
+        "stock":  15,
+        "sku":  "SKU-797235",
+        "rating":  3.9
+    },
+    {
+        "id":  "multi-grain-atta-whole-var-4",
+        "title":  "Multi-Grain Atta (Whole) (Var 4)",
+        "price":  159,
+        "unit":  "1kg",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Stone-ground multi-grain atta with wheat, ragi, jowar \u0026 bajra. Sourced near Uttarakhand. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "vegan",
+                     "organic",
+                     "a2"
+                 ],
+        "stock":  45,
+        "sku":  "SKU-556658",
+        "rating":  4.4
+    },
+    {
+        "id":  "sendha-namak-rock-salt-var-4",
+        "title":  "Sendha Namak (Rock Salt) (Var 4)",
+        "price":  62,
+        "unit":  "500g",
+        "category":  "Salt \u0026 Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Natural rock salt — mineral rich, unrefined and hand-packed. Sourced near Himachal Pradesh. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "local",
+                     "handmade",
+                     "cold-pressed"
+                 ],
+        "stock":  13,
+        "sku":  "SKU-415902",
+        "rating":  4.6
+    },
+    {
+        "id":  "organic-turmeric-powder-var-4",
+        "title":  "Organic Turmeric Powder (Var 4)",
+        "price":  136,
+        "unit":  "250g",
+        "category":  "Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "High-curcumin turmeric, sun-dried and finely powdered. Sourced near Karnataka. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "local",
+                     "a2",
+                     "handmade"
+                 ],
+        "stock":  92,
+        "sku":  "SKU-445978",
+        "rating":  4.8
+    },
+    {
+        "id":  "ginger-garlic-pickle-homestyle-var-4",
+        "title":  "Ginger Garlic Pickle (Homestyle) (Var 4)",
+        "price":  183,
+        "unit":  "300g",
+        "category":  "Pickles \u0026 Chutneys",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Homestyle achar with mustard oil and traditional spices. Sourced near Maharashtra. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  "a2",
+        "stock":  2,
+        "sku":  "SKU-640960",
+        "rating":  4.6
+    },
+    {
+        "id":  "cold-pressed-coconut-oil-var-4",
+        "title":  "Cold-Pressed Coconut Oil (Var 4)",
+        "price":  433,
+        "unit":  "500ml",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Unrefined virgin coconut oil — multi-purpose for cooking \u0026 skin. Sourced near Karnataka. Certified: EU Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "vegan"
+                 ],
+        "stock":  57,
+        "sku":  "SKU-452565",
+        "rating":  4.2
+    },
+    {
+        "id":  "finger-millet-ragi-flour-var-4",
+        "title":  "Finger Millet (Ragi) Flour (Var 4)",
+        "price":  96,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Nutrient dense ragi flour — ideal for porridge and rotis. Sourced near Himachal Pradesh. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "vegan"
+                 ],
+        "stock":  0,
+        "sku":  "SKU-945889",
+        "rating":  4.1
+    },
+    {
+        "id":  "herbal-detox-tea-blend-var-4",
+        "title":  "Herbal Detox Tea Blend (Var 4)",
+        "price":  203,
+        "unit":  "50g",
+        "category":  "Beverages \u0026 Tea",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Loose leaf blend — tulsi, ginger, cinnamon and lemongrass. Sourced near Jaipur, Rajasthan. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "gluten-free",
+                     "handmade",
+                     "raw"
+                 ],
+        "stock":  63,
+        "sku":  "SKU-270123",
+        "rating":  4.1
+    },
+    {
+        "id":  "organic-mustard-seeds-var-4",
+        "title":  "Organic Mustard Seeds (Var 4)",
+        "price":  124,
+        "unit":  "250g",
+        "category":  "Seeds \u0026 Staples",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Small brown mustard seeds for pickling and tempering. Sourced near Jaipur, Rajasthan. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "local",
+                     "gluten-free",
+                     "vegan",
+                     "handmade"
+                 ],
+        "stock":  103,
+        "sku":  "SKU-684042",
+        "rating":  4.9
+    },
+    {
+        "id":  "rajgira-flour-amaranth-var-4",
+        "title":  "Rajgira Flour (Amaranth) (Var 4)",
+        "price":  209,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Gluten-free amaranth flour — good for fasting recipes and baking. Sourced near Uttarakhand. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "organic",
+                     "a2"
+                 ],
+        "stock":  119,
+        "sku":  "SKU-828448",
+        "rating":  4.1
+    },
+    {
+        "id":  "organic-jaggery-powder-var-5",
+        "title":  "Organic Jaggery Powder (Var 5)",
+        "price":  238,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure organic jaggery. Sourced near Jaipur, Rajasthan. Certified: Jaivik Bharat.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "gluten-free",
+                     "handmade"
+                 ],
+        "stock":  63,
+        "sku":  "SKU-122602",
+        "rating":  4.8
+    },
+    {
+        "id":  "cold-pressed-mustard-oil-var-5",
+        "title":  "Cold-Pressed Mustard Oil (Var 5)",
+        "price":  357,
+        "unit":  "1L",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Cold-pressed from organic mustard seeds. Sourced near Punjab. Certified: EU Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "cold-pressed",
+                     "a2",
+                     "gluten-free"
+                 ],
+        "stock":  10,
+        "sku":  "SKU-229658",
+        "rating":  4.2
+    },
+    {
+        "id":  "organic-a2-ghee-var-5",
+        "title":  "Organic A2 Ghee (Var 5)",
+        "price":  979,
+        "unit":  "500ml",
+        "category":  "Dairy",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Premium A2 bilona ghee from grass-fed cows. Sourced near Himachal Pradesh. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "organic"
+                 ],
+        "stock":  97,
+        "sku":  "SKU-571076",
+        "rating":  4.2
+    },
+    {
+        "id":  "organic-jaggery-cube-var-5",
+        "title":  "Organic Jaggery Cube (Var 5)",
+        "price":  187,
+        "unit":  "250g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Handmade organic jaggery cubes. Sourced near Maharashtra. Certified: Jaivik Bharat.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "raw",
+                     "handmade",
+                     "vegan",
+                     "cold-pressed"
+                 ],
+        "stock":  20,
+        "sku":  "SKU-360897",
+        "rating":  3.9
+    },
+    {
+        "id":  "organic-wildflower-honey-var-5",
+        "title":  "Organic Wildflower Honey (Var 5)",
+        "price":  423,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure wildflower honey — unprocessed, raw and jarred locally. Sourced near Uttarakhand. Certified: EU Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "raw",
+                     "handmade",
+                     "unprocessed"
+                 ],
+        "stock":  37,
+        "sku":  "SKU-723947",
+        "rating":  4.2
+    },
+    {
+        "id":  "multi-grain-atta-whole-var-5",
+        "title":  "Multi-Grain Atta (Whole) (Var 5)",
+        "price":  163,
+        "unit":  "1kg",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Stone-ground multi-grain atta with wheat, ragi, jowar \u0026 bajra. Sourced near Punjab. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "local",
+                     "gluten-free",
+                     "cold-pressed"
+                 ],
+        "stock":  12,
+        "sku":  "SKU-246177",
+        "rating":  4.1
+    },
+    {
+        "id":  "sendha-namak-rock-salt-var-5",
+        "title":  "Sendha Namak (Rock Salt) (Var 5)",
+        "price":  58,
+        "unit":  "500g",
+        "category":  "Salt \u0026 Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Natural rock salt — mineral rich, unrefined and hand-packed. Sourced near Uttarakhand. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "local",
+                     "handmade"
+                 ],
+        "stock":  7,
+        "sku":  "SKU-428450",
+        "rating":  3.8
+    },
+    {
+        "id":  "organic-turmeric-powder-var-5",
+        "title":  "Organic Turmeric Powder (Var 5)",
+        "price":  144,
+        "unit":  "250g",
+        "category":  "Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "High-curcumin turmeric, sun-dried and finely powdered. Sourced near Jaipur, Rajasthan. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "local",
+                     "a2",
+                     "raw"
+                 ],
+        "stock":  80,
+        "sku":  "SKU-706239",
+        "rating":  4.4
+    },
+    {
+        "id":  "ginger-garlic-pickle-homestyle-var-5",
+        "title":  "Ginger Garlic Pickle (Homestyle) (Var 5)",
+        "price":  179,
+        "unit":  "300g",
+        "category":  "Pickles \u0026 Chutneys",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Homestyle achar with mustard oil and traditional spices. Sourced near Madhya Pradesh. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "organic"
+                 ],
+        "stock":  99,
+        "sku":  "SKU-577920",
+        "rating":  3.9
+    },
+    {
+        "id":  "cold-pressed-coconut-oil-var-5",
+        "title":  "Cold-Pressed Coconut Oil (Var 5)",
+        "price":  404,
+        "unit":  "500ml",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Unrefined virgin coconut oil — multi-purpose for cooking \u0026 skin. Sourced near Maharashtra. Certified: Jaivik Bharat.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "a2",
+                     "gluten-free",
+                     "local"
+                 ],
+        "stock":  20,
+        "sku":  "SKU-369394",
+        "rating":  4.7
+    },
+    {
+        "id":  "finger-millet-ragi-flour-var-5",
+        "title":  "Finger Millet (Ragi) Flour (Var 5)",
+        "price":  92,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Nutrient dense ragi flour — ideal for porridge and rotis. Sourced near Maharashtra. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "a2",
+                     "unprocessed"
+                 ],
+        "stock":  35,
+        "sku":  "SKU-827779",
+        "rating":  4.3
+    },
+    {
+        "id":  "herbal-detox-tea-blend-var-5",
+        "title":  "Herbal Detox Tea Blend (Var 5)",
+        "price":  205,
+        "unit":  "50g",
+        "category":  "Beverages \u0026 Tea",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Loose leaf blend — tulsi, ginger, cinnamon and lemongrass. Sourced near Maharashtra. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "handmade"
+                 ],
+        "stock":  73,
+        "sku":  "SKU-592018",
+        "rating":  4.6
+    },
+    {
+        "id":  "organic-mustard-seeds-var-5",
+        "title":  "Organic Mustard Seeds (Var 5)",
+        "price":  121,
+        "unit":  "250g",
+        "category":  "Seeds \u0026 Staples",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Small brown mustard seeds for pickling and tempering. Sourced near Karnataka. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "organic",
+                     "handmade"
+                 ],
+        "stock":  68,
+        "sku":  "SKU-424269",
+        "rating":  4
+    },
+    {
+        "id":  "rajgira-flour-amaranth-var-5",
+        "title":  "Rajgira Flour (Amaranth) (Var 5)",
+        "price":  205,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Gluten-free amaranth flour — good for fasting recipes and baking. Sourced near Uttarakhand. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "raw",
+                     "unprocessed",
+                     "a2"
+                 ],
+        "stock":  102,
+        "sku":  "SKU-114780",
+        "rating":  5
+    },
+    {
+        "id":  "organic-jaggery-powder-var-6",
+        "title":  "Organic Jaggery Powder (Var 6)",
+        "price":  245,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure organic jaggery. Sourced near Himachal Pradesh. Certified: India Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "raw",
+                     "a2"
+                 ],
+        "stock":  116,
+        "sku":  "SKU-628624",
+        "rating":  3.9
+    },
+    {
+        "id":  "cold-pressed-mustard-oil-var-6",
+        "title":  "Cold-Pressed Mustard Oil (Var 6)",
+        "price":  352,
+        "unit":  "1L",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Cold-pressed from organic mustard seeds. Sourced near Madhya Pradesh. Certified: EU Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "handmade",
+                     "gluten-free",
+                     "vegan"
+                 ],
+        "stock":  79,
+        "sku":  "SKU-856351",
+        "rating":  4.4
+    },
+    {
+        "id":  "organic-a2-ghee-var-6",
+        "title":  "Organic A2 Ghee (Var 6)",
+        "price":  958,
+        "unit":  "500ml",
+        "category":  "Dairy",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Premium A2 bilona ghee from grass-fed cows. Sourced near Madhya Pradesh. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "handmade",
+                     "cold-pressed"
+                 ],
+        "stock":  93,
+        "sku":  "SKU-388191",
+        "rating":  4.3
+    },
+    {
+        "id":  "organic-jaggery-cube-var-6",
+        "title":  "Organic Jaggery Cube (Var 6)",
+        "price":  175,
+        "unit":  "250g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Handmade organic jaggery cubes. Sourced near Himachal Pradesh. Certified: EU Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "handmade",
+                     "unprocessed",
+                     "vegan"
+                 ],
+        "stock":  68,
+        "sku":  "SKU-964406",
+        "rating":  4.2
+    },
+    {
+        "id":  "organic-wildflower-honey-var-6",
+        "title":  "Organic Wildflower Honey (Var 6)",
+        "price":  415,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure wildflower honey — unprocessed, raw and jarred locally. Sourced near Himachal Pradesh. Certified: EU Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "vegan",
+                     "local"
+                 ],
+        "stock":  69,
+        "sku":  "SKU-645152",
+        "rating":  4.5
+    },
+    {
+        "id":  "multi-grain-atta-whole-var-6",
+        "title":  "Multi-Grain Atta (Whole) (Var 6)",
+        "price":  160,
+        "unit":  "1kg",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Stone-ground multi-grain atta with wheat, ragi, jowar \u0026 bajra. Sourced near Madhya Pradesh. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "vegan",
+                     "organic",
+                     "local"
+                 ],
+        "stock":  29,
+        "sku":  "SKU-950313",
+        "rating":  4.2
+    },
+    {
+        "id":  "sendha-namak-rock-salt-var-6",
+        "title":  "Sendha Namak (Rock Salt) (Var 6)",
+        "price":  60,
+        "unit":  "500g",
+        "category":  "Salt \u0026 Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Natural rock salt — mineral rich, unrefined and hand-packed. Sourced near Madhya Pradesh. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "raw",
+                     "gluten-free",
+                     "unprocessed"
+                 ],
+        "stock":  113,
+        "sku":  "SKU-842693",
+        "rating":  4.8
+    },
+    {
+        "id":  "organic-turmeric-powder-var-6",
+        "title":  "Organic Turmeric Powder (Var 6)",
+        "price":  144,
+        "unit":  "250g",
+        "category":  "Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "High-curcumin turmeric, sun-dried and finely powdered. Sourced near Uttarakhand. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "raw"
+                 ],
+        "stock":  5,
+        "sku":  "SKU-922549",
+        "rating":  4.2
+    },
+    {
+        "id":  "ginger-garlic-pickle-homestyle-var-6",
+        "title":  "Ginger Garlic Pickle (Homestyle) (Var 6)",
+        "price":  178,
+        "unit":  "300g",
+        "category":  "Pickles \u0026 Chutneys",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Homestyle achar with mustard oil and traditional spices. Sourced near Maharashtra. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "raw",
+                     "organic"
+                 ],
+        "stock":  16,
+        "sku":  "SKU-482489",
+        "rating":  3.9
+    },
+    {
+        "id":  "cold-pressed-coconut-oil-var-6",
+        "title":  "Cold-Pressed Coconut Oil (Var 6)",
+        "price":  426,
+        "unit":  "500ml",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Unrefined virgin coconut oil — multi-purpose for cooking \u0026 skin. Sourced near Karnataka. Certified: EU Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "organic",
+                     "gluten-free",
+                     "raw"
+                 ],
+        "stock":  99,
+        "sku":  "SKU-865705",
+        "rating":  4.5
+    },
+    {
+        "id":  "finger-millet-ragi-flour-var-6",
+        "title":  "Finger Millet (Ragi) Flour (Var 6)",
+        "price":  97,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Nutrient dense ragi flour — ideal for porridge and rotis. Sourced near Punjab. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "cold-pressed"
+                 ],
+        "stock":  82,
+        "sku":  "SKU-865708",
+        "rating":  4.1
+    },
+    {
+        "id":  "herbal-detox-tea-blend-var-6",
+        "title":  "Herbal Detox Tea Blend (Var 6)",
+        "price":  194,
+        "unit":  "50g",
+        "category":  "Beverages \u0026 Tea",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Loose leaf blend — tulsi, ginger, cinnamon and lemongrass. Sourced near Madhya Pradesh. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "raw",
+                     "handmade"
+                 ],
+        "stock":  109,
+        "sku":  "SKU-829374",
+        "rating":  4.8
+    },
+    {
+        "id":  "organic-mustard-seeds-var-6",
+        "title":  "Organic Mustard Seeds (Var 6)",
+        "price":  116,
+        "unit":  "250g",
+        "category":  "Seeds \u0026 Staples",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Small brown mustard seeds for pickling and tempering. Sourced near Jaipur, Rajasthan. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "cold-pressed"
+                 ],
+        "stock":  15,
+        "sku":  "SKU-314455",
+        "rating":  4
+    },
+    {
+        "id":  "rajgira-flour-amaranth-var-6",
+        "title":  "Rajgira Flour (Amaranth) (Var 6)",
+        "price":  205,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Gluten-free amaranth flour — good for fasting recipes and baking. Sourced near Jaipur, Rajasthan. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "local",
+                     "a2",
+                     "handmade"
+                 ],
+        "stock":  105,
+        "sku":  "SKU-717591",
+        "rating":  4.6
+    },
+    {
+        "id":  "organic-jaggery-powder-var-7",
+        "title":  "Organic Jaggery Powder (Var 7)",
+        "price":  234,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure organic jaggery. Sourced near Himachal Pradesh. Certified: USDA Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "raw",
+                     "vegan"
+                 ],
+        "stock":  65,
+        "sku":  "SKU-171231",
+        "rating":  4.9
+    },
+    {
+        "id":  "cold-pressed-mustard-oil-var-7",
+        "title":  "Cold-Pressed Mustard Oil (Var 7)",
+        "price":  364,
+        "unit":  "1L",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Cold-pressed from organic mustard seeds. Sourced near Punjab. Certified: India Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "gluten-free"
+                 ],
+        "stock":  44,
+        "sku":  "SKU-342263",
+        "rating":  4.5
+    },
+    {
+        "id":  "organic-a2-ghee-var-7",
+        "title":  "Organic A2 Ghee (Var 7)",
+        "price":  974,
+        "unit":  "500ml",
+        "category":  "Dairy",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Premium A2 bilona ghee from grass-fed cows. Sourced near Maharashtra. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "vegan",
+                     "organic"
+                 ],
+        "stock":  64,
+        "sku":  "SKU-191617",
+        "rating":  3.9
+    },
+    {
+        "id":  "organic-jaggery-cube-var-7",
+        "title":  "Organic Jaggery Cube (Var 7)",
+        "price":  175,
+        "unit":  "250g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Handmade organic jaggery cubes. Sourced near Karnataka. Certified: EU Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "organic",
+                     "raw",
+                     "handmade"
+                 ],
+        "stock":  88,
+        "sku":  "SKU-931265",
+        "rating":  4.6
+    },
+    {
+        "id":  "organic-wildflower-honey-var-7",
+        "title":  "Organic Wildflower Honey (Var 7)",
+        "price":  425,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure wildflower honey — unprocessed, raw and jarred locally. Sourced near Maharashtra. Certified: Jaivik Bharat.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "organic",
+                     "gluten-free",
+                     "cold-pressed"
+                 ],
+        "stock":  82,
+        "sku":  "SKU-243150",
+        "rating":  3.9
+    },
+    {
+        "id":  "multi-grain-atta-whole-var-7",
+        "title":  "Multi-Grain Atta (Whole) (Var 7)",
+        "price":  154,
+        "unit":  "1kg",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Stone-ground multi-grain atta with wheat, ragi, jowar \u0026 bajra. Sourced near Uttarakhand. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "organic",
+                     "handmade"
+                 ],
+        "stock":  105,
+        "sku":  "SKU-206781",
+        "rating":  5
+    },
+    {
+        "id":  "sendha-namak-rock-salt-var-7",
+        "title":  "Sendha Namak (Rock Salt) (Var 7)",
+        "price":  60,
+        "unit":  "500g",
+        "category":  "Salt \u0026 Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Natural rock salt — mineral rich, unrefined and hand-packed. Sourced near Jaipur, Rajasthan. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "a2",
+                     "raw",
+                     "gluten-free"
+                 ],
+        "stock":  90,
+        "sku":  "SKU-181702",
+        "rating":  4.1
+    },
+    {
+        "id":  "organic-turmeric-powder-var-7",
+        "title":  "Organic Turmeric Powder (Var 7)",
+        "price":  136,
+        "unit":  "250g",
+        "category":  "Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "High-curcumin turmeric, sun-dried and finely powdered. Sourced near Madhya Pradesh. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "handmade"
+                 ],
+        "stock":  89,
+        "sku":  "SKU-132407",
+        "rating":  5
+    },
+    {
+        "id":  "ginger-garlic-pickle-homestyle-var-7",
+        "title":  "Ginger Garlic Pickle (Homestyle) (Var 7)",
+        "price":  185,
+        "unit":  "300g",
+        "category":  "Pickles \u0026 Chutneys",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Homestyle achar with mustard oil and traditional spices. Sourced near Maharashtra. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "local",
+                     "handmade"
+                 ],
+        "stock":  56,
+        "sku":  "SKU-304716",
+        "rating":  4.6
+    },
+    {
+        "id":  "cold-pressed-coconut-oil-var-7",
+        "title":  "Cold-Pressed Coconut Oil (Var 7)",
+        "price":  419,
+        "unit":  "500ml",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Unrefined virgin coconut oil — multi-purpose for cooking \u0026 skin. Sourced near Uttarakhand. Certified: Jaivik Bharat.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "cold-pressed",
+                     "unprocessed"
+                 ],
+        "stock":  83,
+        "sku":  "SKU-329576",
+        "rating":  4.7
+    },
+    {
+        "id":  "finger-millet-ragi-flour-var-7",
+        "title":  "Finger Millet (Ragi) Flour (Var 7)",
+        "price":  93,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Nutrient dense ragi flour — ideal for porridge and rotis. Sourced near Punjab. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "organic"
+                 ],
+        "stock":  118,
+        "sku":  "SKU-177176",
+        "rating":  3.9
+    },
+    {
+        "id":  "herbal-detox-tea-blend-var-7",
+        "title":  "Herbal Detox Tea Blend (Var 7)",
+        "price":  195,
+        "unit":  "50g",
+        "category":  "Beverages \u0026 Tea",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Loose leaf blend — tulsi, ginger, cinnamon and lemongrass. Sourced near Karnataka. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "raw",
+                     "local"
+                 ],
+        "stock":  26,
+        "sku":  "SKU-753603",
+        "rating":  4.6
+    },
+    {
+        "id":  "organic-mustard-seeds-var-7",
+        "title":  "Organic Mustard Seeds (Var 7)",
+        "price":  122,
+        "unit":  "250g",
+        "category":  "Seeds \u0026 Staples",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Small brown mustard seeds for pickling and tempering. Sourced near Jaipur, Rajasthan. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "a2"
+                 ],
+        "stock":  4,
+        "sku":  "SKU-528356",
+        "rating":  3.8
+    },
+    {
+        "id":  "rajgira-flour-amaranth-var-7",
+        "title":  "Rajgira Flour (Amaranth) (Var 7)",
+        "price":  215,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Gluten-free amaranth flour — good for fasting recipes and baking. Sourced near Uttarakhand. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "raw",
+                     "a2"
+                 ],
+        "stock":  9,
+        "sku":  "SKU-997795",
+        "rating":  4.9
+    },
+    {
+        "id":  "organic-jaggery-powder-var-8",
+        "title":  "Organic Jaggery Powder (Var 8)",
+        "price":  231,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure organic jaggery. Sourced near Karnataka. Certified: USDA Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "local",
+                     "handmade",
+                     "unprocessed"
+                 ],
+        "stock":  66,
+        "sku":  "SKU-852917",
+        "rating":  4.6
+    },
+    {
+        "id":  "cold-pressed-mustard-oil-var-8",
+        "title":  "Cold-Pressed Mustard Oil (Var 8)",
+        "price":  356,
+        "unit":  "1L",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Cold-pressed from organic mustard seeds. Sourced near Punjab. Certified: USDA Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "a2",
+                     "raw"
+                 ],
+        "stock":  86,
+        "sku":  "SKU-898950",
+        "rating":  4.3
+    },
+    {
+        "id":  "organic-a2-ghee-var-8",
+        "title":  "Organic A2 Ghee (Var 8)",
+        "price":  958,
+        "unit":  "500ml",
+        "category":  "Dairy",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Premium A2 bilona ghee from grass-fed cows. Sourced near Punjab. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "a2",
+                     "unprocessed"
+                 ],
+        "stock":  64,
+        "sku":  "SKU-276327",
+        "rating":  4.4
+    },
+    {
+        "id":  "organic-jaggery-cube-var-8",
+        "title":  "Organic Jaggery Cube (Var 8)",
+        "price":  185,
+        "unit":  "250g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Handmade organic jaggery cubes. Sourced near Punjab. Certified: USDA Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "raw"
+                 ],
+        "stock":  13,
+        "sku":  "SKU-239021",
+        "rating":  4.8
+    },
+    {
+        "id":  "organic-wildflower-honey-var-8",
+        "title":  "Organic Wildflower Honey (Var 8)",
+        "price":  435,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure wildflower honey — unprocessed, raw and jarred locally. Sourced near Karnataka. Certified: USDA Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "raw",
+                     "unprocessed",
+                     "gluten-free"
+                 ],
+        "stock":  62,
+        "sku":  "SKU-254771",
+        "rating":  4.3
+    },
+    {
+        "id":  "multi-grain-atta-whole-var-8",
+        "title":  "Multi-Grain Atta (Whole) (Var 8)",
+        "price":  163,
+        "unit":  "1kg",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Stone-ground multi-grain atta with wheat, ragi, jowar \u0026 bajra. Sourced near Madhya Pradesh. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "unprocessed",
+                     "handmade"
+                 ],
+        "stock":  35,
+        "sku":  "SKU-171971",
+        "rating":  4.4
+    },
+    {
+        "id":  "sendha-namak-rock-salt-var-8",
+        "title":  "Sendha Namak (Rock Salt) (Var 8)",
+        "price":  58,
+        "unit":  "500g",
+        "category":  "Salt \u0026 Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Natural rock salt — mineral rich, unrefined and hand-packed. Sourced near Maharashtra. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "raw",
+                     "gluten-free",
+                     "vegan"
+                 ],
+        "stock":  89,
+        "sku":  "SKU-742190",
+        "rating":  3.9
+    },
+    {
+        "id":  "organic-turmeric-powder-var-8",
+        "title":  "Organic Turmeric Powder (Var 8)",
+        "price":  140,
+        "unit":  "250g",
+        "category":  "Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "High-curcumin turmeric, sun-dried and finely powdered. Sourced near Uttarakhand. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  "raw",
+        "stock":  87,
+        "sku":  "SKU-164885",
+        "rating":  4.7
+    },
+    {
+        "id":  "ginger-garlic-pickle-homestyle-var-8",
+        "title":  "Ginger Garlic Pickle (Homestyle) (Var 8)",
+        "price":  177,
+        "unit":  "300g",
+        "category":  "Pickles \u0026 Chutneys",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Homestyle achar with mustard oil and traditional spices. Sourced near Punjab. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "raw",
+                     "organic",
+                     "local"
+                 ],
+        "stock":  16,
+        "sku":  "SKU-971485",
+        "rating":  4.9
+    },
+    {
+        "id":  "cold-pressed-coconut-oil-var-8",
+        "title":  "Cold-Pressed Coconut Oil (Var 8)",
+        "price":  422,
+        "unit":  "500ml",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Unrefined virgin coconut oil — multi-purpose for cooking \u0026 skin. Sourced near Himachal Pradesh. Certified: USDA Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "local",
+                     "cold-pressed"
+                 ],
+        "stock":  116,
+        "sku":  "SKU-776277",
+        "rating":  4.8
+    },
+    {
+        "id":  "finger-millet-ragi-flour-var-8",
+        "title":  "Finger Millet (Ragi) Flour (Var 8)",
+        "price":  95,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Nutrient dense ragi flour — ideal for porridge and rotis. Sourced near Himachal Pradesh. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "raw",
+                     "local"
+                 ],
+        "stock":  103,
+        "sku":  "SKU-940257",
+        "rating":  4
+    },
+    {
+        "id":  "herbal-detox-tea-blend-var-8",
+        "title":  "Herbal Detox Tea Blend (Var 8)",
+        "price":  196,
+        "unit":  "50g",
+        "category":  "Beverages \u0026 Tea",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Loose leaf blend — tulsi, ginger, cinnamon and lemongrass. Sourced near Karnataka. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "vegan"
+                 ],
+        "stock":  62,
+        "sku":  "SKU-226095",
+        "rating":  3.9
+    },
+    {
+        "id":  "organic-mustard-seeds-var-8",
+        "title":  "Organic Mustard Seeds (Var 8)",
+        "price":  123,
+        "unit":  "250g",
+        "category":  "Seeds \u0026 Staples",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Small brown mustard seeds for pickling and tempering. Sourced near Karnataka. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "raw",
+                     "a2",
+                     "handmade",
+                     "vegan"
+                 ],
+        "stock":  106,
+        "sku":  "SKU-399270",
+        "rating":  4.5
+    },
+    {
+        "id":  "rajgira-flour-amaranth-var-8",
+        "title":  "Rajgira Flour (Amaranth) (Var 8)",
+        "price":  214,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Gluten-free amaranth flour — good for fasting recipes and baking. Sourced near Maharashtra. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  "unprocessed",
+        "stock":  105,
+        "sku":  "SKU-813453",
+        "rating":  4.1
+    },
+    {
+        "id":  "organic-jaggery-powder-var-9",
+        "title":  "Organic Jaggery Powder (Var 9)",
+        "price":  240,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure organic jaggery. Sourced near Punjab. Certified: Jaivik Bharat.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "local",
+                     "gluten-free",
+                     "handmade"
+                 ],
+        "stock":  83,
+        "sku":  "SKU-429505",
+        "rating":  4.3
+    },
+    {
+        "id":  "cold-pressed-mustard-oil-var-9",
+        "title":  "Cold-Pressed Mustard Oil (Var 9)",
+        "price":  337,
+        "unit":  "1L",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Cold-pressed from organic mustard seeds. Sourced near Himachal Pradesh. Certified: USDA Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "local",
+                     "vegan"
+                 ],
+        "stock":  12,
+        "sku":  "SKU-378665",
+        "rating":  4.3
+    },
+    {
+        "id":  "organic-a2-ghee-var-9",
+        "title":  "Organic A2 Ghee (Var 9)",
+        "price":  957,
+        "unit":  "500ml",
+        "category":  "Dairy",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Premium A2 bilona ghee from grass-fed cows. Sourced near Maharashtra. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "organic",
+                     "gluten-free",
+                     "unprocessed",
+                     "vegan"
+                 ],
+        "stock":  4,
+        "sku":  "SKU-245136",
+        "rating":  4.8
+    },
+    {
+        "id":  "organic-jaggery-cube-var-9",
+        "title":  "Organic Jaggery Cube (Var 9)",
+        "price":  176,
+        "unit":  "250g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Handmade organic jaggery cubes. Sourced near Jaipur, Rajasthan. Certified: Jaivik Bharat.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "vegan",
+                     "handmade"
+                 ],
+        "stock":  102,
+        "sku":  "SKU-728345",
+        "rating":  4.9
+    },
+    {
+        "id":  "organic-wildflower-honey-var-9",
+        "title":  "Organic Wildflower Honey (Var 9)",
+        "price":  408,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure wildflower honey — unprocessed, raw and jarred locally. Sourced near Maharashtra. Certified: Jaivik Bharat.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "raw",
+                     "cold-pressed",
+                     "unprocessed"
+                 ],
+        "stock":  24,
+        "sku":  "SKU-298133",
+        "rating":  4.2
+    },
+    {
+        "id":  "multi-grain-atta-whole-var-9",
+        "title":  "Multi-Grain Atta (Whole) (Var 9)",
+        "price":  161,
+        "unit":  "1kg",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Stone-ground multi-grain atta with wheat, ragi, jowar \u0026 bajra. Sourced near Himachal Pradesh. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "cold-pressed"
+                 ],
+        "stock":  59,
+        "sku":  "SKU-429803",
+        "rating":  4
+    },
+    {
+        "id":  "sendha-namak-rock-salt-var-9",
+        "title":  "Sendha Namak (Rock Salt) (Var 9)",
+        "price":  62,
+        "unit":  "500g",
+        "category":  "Salt \u0026 Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Natural rock salt — mineral rich, unrefined and hand-packed. Sourced near Uttarakhand. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "raw",
+                     "organic",
+                     "a2"
+                 ],
+        "stock":  115,
+        "sku":  "SKU-719918",
+        "rating":  4.2
+    },
+    {
+        "id":  "organic-turmeric-powder-var-9",
+        "title":  "Organic Turmeric Powder (Var 9)",
+        "price":  138,
+        "unit":  "250g",
+        "category":  "Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "High-curcumin turmeric, sun-dried and finely powdered. Sourced near Madhya Pradesh. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "handmade",
+                     "cold-pressed",
+                     "local"
+                 ],
+        "stock":  31,
+        "sku":  "SKU-436292",
+        "rating":  3.9
+    },
+    {
+        "id":  "ginger-garlic-pickle-homestyle-var-9",
+        "title":  "Ginger Garlic Pickle (Homestyle) (Var 9)",
+        "price":  180,
+        "unit":  "300g",
+        "category":  "Pickles \u0026 Chutneys",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Homestyle achar with mustard oil and traditional spices. Sourced near Himachal Pradesh. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "local",
+                     "unprocessed",
+                     "cold-pressed"
+                 ],
+        "stock":  20,
+        "sku":  "SKU-644967",
+        "rating":  4.2
+    },
+    {
+        "id":  "cold-pressed-coconut-oil-var-9",
+        "title":  "Cold-Pressed Coconut Oil (Var 9)",
+        "price":  431,
+        "unit":  "500ml",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Unrefined virgin coconut oil — multi-purpose for cooking \u0026 skin. Sourced near Karnataka. Certified: Jaivik Bharat.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "local",
+                     "vegan",
+                     "gluten-free"
+                 ],
+        "stock":  15,
+        "sku":  "SKU-955454",
+        "rating":  4.3
+    },
+    {
+        "id":  "finger-millet-ragi-flour-var-9",
+        "title":  "Finger Millet (Ragi) Flour (Var 9)",
+        "price":  95,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Nutrient dense ragi flour — ideal for porridge and rotis. Sourced near Maharashtra. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "unprocessed",
+                     "cold-pressed"
+                 ],
+        "stock":  75,
+        "sku":  "SKU-796965",
+        "rating":  4.2
+    },
+    {
+        "id":  "herbal-detox-tea-blend-var-9",
+        "title":  "Herbal Detox Tea Blend (Var 9)",
+        "price":  203,
+        "unit":  "50g",
+        "category":  "Beverages \u0026 Tea",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Loose leaf blend — tulsi, ginger, cinnamon and lemongrass. Sourced near Punjab. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "organic"
+                 ],
+        "stock":  1,
+        "sku":  "SKU-642581",
+        "rating":  5
+    },
+    {
+        "id":  "organic-mustard-seeds-var-9",
+        "title":  "Organic Mustard Seeds (Var 9)",
+        "price":  122,
+        "unit":  "250g",
+        "category":  "Seeds \u0026 Staples",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Small brown mustard seeds for pickling and tempering. Sourced near Karnataka. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "raw",
+                     "unprocessed",
+                     "gluten-free"
+                 ],
+        "stock":  72,
+        "sku":  "SKU-966447",
+        "rating":  4.4
+    },
+    {
+        "id":  "rajgira-flour-amaranth-var-9",
+        "title":  "Rajgira Flour (Amaranth) (Var 9)",
+        "price":  211,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Gluten-free amaranth flour — good for fasting recipes and baking. Sourced near Madhya Pradesh. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  "vegan",
+        "stock":  6,
+        "sku":  "SKU-779609",
+        "rating":  4.4
+    },
+    {
+        "id":  "organic-jaggery-powder-var-10",
+        "title":  "Organic Jaggery Powder (Var 10)",
+        "price":  246,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure organic jaggery. Sourced near Jaipur, Rajasthan. Certified: India Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "local",
+                     "unprocessed",
+                     "gluten-free"
+                 ],
+        "stock":  71,
+        "sku":  "SKU-881814",
+        "rating":  4.3
+    },
+    {
+        "id":  "cold-pressed-mustard-oil-var-10",
+        "title":  "Cold-Pressed Mustard Oil (Var 10)",
+        "price":  353,
+        "unit":  "1L",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Cold-pressed from organic mustard seeds. Sourced near Maharashtra. Certified: Jaivik Bharat.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "local",
+                     "vegan"
+                 ],
+        "stock":  85,
+        "sku":  "SKU-270912",
+        "rating":  4.4
+    },
+    {
+        "id":  "organic-a2-ghee-var-10",
+        "title":  "Organic A2 Ghee (Var 10)",
+        "price":  943,
+        "unit":  "500ml",
+        "category":  "Dairy",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Premium A2 bilona ghee from grass-fed cows. Sourced near Karnataka. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "unprocessed"
+                 ],
+        "stock":  91,
+        "sku":  "SKU-830621",
+        "rating":  4.1
+    },
+    {
+        "id":  "organic-jaggery-cube-var-10",
+        "title":  "Organic Jaggery Cube (Var 10)",
+        "price":  180,
+        "unit":  "250g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Handmade organic jaggery cubes. Sourced near Uttarakhand. Certified: USDA Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "vegan"
+                 ],
+        "stock":  62,
+        "sku":  "SKU-835220",
+        "rating":  4.3
+    },
+    {
+        "id":  "organic-wildflower-honey-var-10",
+        "title":  "Organic Wildflower Honey (Var 10)",
+        "price":  434,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure wildflower honey — unprocessed, raw and jarred locally. Sourced near Maharashtra. Certified: India Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "local",
+                     "vegan",
+                     "cold-pressed"
+                 ],
+        "stock":  50,
+        "sku":  "SKU-895661",
+        "rating":  4.6
+    },
+    {
+        "id":  "multi-grain-atta-whole-var-10",
+        "title":  "Multi-Grain Atta (Whole) (Var 10)",
+        "price":  163,
+        "unit":  "1kg",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Stone-ground multi-grain atta with wheat, ragi, jowar \u0026 bajra. Sourced near Karnataka. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "cold-pressed",
+                     "raw",
+                     "local"
+                 ],
+        "stock":  78,
+        "sku":  "SKU-966894",
+        "rating":  4.7
+    },
+    {
+        "id":  "sendha-namak-rock-salt-var-10",
+        "title":  "Sendha Namak (Rock Salt) (Var 10)",
+        "price":  58,
+        "unit":  "500g",
+        "category":  "Salt \u0026 Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Natural rock salt — mineral rich, unrefined and hand-packed. Sourced near Maharashtra. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "handmade",
+                     "vegan",
+                     "unprocessed"
+                 ],
+        "stock":  37,
+        "sku":  "SKU-407047",
+        "rating":  3.9
+    },
+    {
+        "id":  "organic-turmeric-powder-var-10",
+        "title":  "Organic Turmeric Powder (Var 10)",
+        "price":  139,
+        "unit":  "250g",
+        "category":  "Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "High-curcumin turmeric, sun-dried and finely powdered. Sourced near Uttarakhand. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "local",
+                     "vegan"
+                 ],
+        "stock":  89,
+        "sku":  "SKU-322014",
+        "rating":  4.9
+    },
+    {
+        "id":  "ginger-garlic-pickle-homestyle-var-10",
+        "title":  "Ginger Garlic Pickle (Homestyle) (Var 10)",
+        "price":  181,
+        "unit":  "300g",
+        "category":  "Pickles \u0026 Chutneys",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Homestyle achar with mustard oil and traditional spices. Sourced near Punjab. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "raw",
+                     "a2",
+                     "organic"
+                 ],
+        "stock":  118,
+        "sku":  "SKU-386502",
+        "rating":  4
+    },
+    {
+        "id":  "cold-pressed-coconut-oil-var-10",
+        "title":  "Cold-Pressed Coconut Oil (Var 10)",
+        "price":  426,
+        "unit":  "500ml",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Unrefined virgin coconut oil — multi-purpose for cooking \u0026 skin. Sourced near Punjab. Certified: India Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "unprocessed"
+                 ],
+        "stock":  38,
+        "sku":  "SKU-438817",
+        "rating":  4.9
+    },
+    {
+        "id":  "finger-millet-ragi-flour-var-10",
+        "title":  "Finger Millet (Ragi) Flour (Var 10)",
+        "price":  92,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Nutrient dense ragi flour — ideal for porridge and rotis. Sourced near Himachal Pradesh. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  "a2",
+        "stock":  99,
+        "sku":  "SKU-214687",
+        "rating":  4.2
+    },
+    {
+        "id":  "herbal-detox-tea-blend-var-10",
+        "title":  "Herbal Detox Tea Blend (Var 10)",
+        "price":  195,
+        "unit":  "50g",
+        "category":  "Beverages \u0026 Tea",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Loose leaf blend — tulsi, ginger, cinnamon and lemongrass. Sourced near Uttarakhand. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "a2",
+                     "vegan"
+                 ],
+        "stock":  40,
+        "sku":  "SKU-416653",
+        "rating":  4
+    },
+    {
+        "id":  "organic-mustard-seeds-var-10",
+        "title":  "Organic Mustard Seeds (Var 10)",
+        "price":  118,
+        "unit":  "250g",
+        "category":  "Seeds \u0026 Staples",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Small brown mustard seeds for pickling and tempering. Sourced near Punjab. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "local",
+                     "cold-pressed",
+                     "a2"
+                 ],
+        "stock":  81,
+        "sku":  "SKU-577076",
+        "rating":  4.2
+    },
+    {
+        "id":  "rajgira-flour-amaranth-var-10",
+        "title":  "Rajgira Flour (Amaranth) (Var 10)",
+        "price":  205,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Gluten-free amaranth flour — good for fasting recipes and baking. Sourced near Punjab. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "vegan",
+                     "unprocessed",
+                     "organic"
+                 ],
+        "stock":  29,
+        "sku":  "SKU-245595",
+        "rating":  4.5
+    },
+    {
+        "id":  "organic-jaggery-powder-var-11",
+        "title":  "Organic Jaggery Powder (Var 11)",
+        "price":  236,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure organic jaggery. Sourced near Uttarakhand. Certified: Jaivik Bharat.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "raw",
+                     "vegan",
+                     "gluten-free"
+                 ],
+        "stock":  55,
+        "sku":  "SKU-388096",
+        "rating":  4.1
+    },
+    {
+        "id":  "cold-pressed-mustard-oil-var-11",
+        "title":  "Cold-Pressed Mustard Oil (Var 11)",
+        "price":  361,
+        "unit":  "1L",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Cold-pressed from organic mustard seeds. Sourced near Maharashtra. Certified: EU Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "handmade",
+                     "a2"
+                 ],
+        "stock":  76,
+        "sku":  "SKU-440721",
+        "rating":  4.7
+    },
+    {
+        "id":  "organic-a2-ghee-var-11",
+        "title":  "Organic A2 Ghee (Var 11)",
+        "price":  931,
+        "unit":  "500ml",
+        "category":  "Dairy",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Premium A2 bilona ghee from grass-fed cows. Sourced near Punjab. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "handmade",
+                     "unprocessed",
+                     "local"
+                 ],
+        "stock":  83,
+        "sku":  "SKU-848583",
+        "rating":  3.9
+    },
+    {
+        "id":  "organic-jaggery-cube-var-11",
+        "title":  "Organic Jaggery Cube (Var 11)",
+        "price":  175,
+        "unit":  "250g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Handmade organic jaggery cubes. Sourced near Madhya Pradesh. Certified: USDA Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "local",
+                     "cold-pressed",
+                     "vegan"
+                 ],
+        "stock":  90,
+        "sku":  "SKU-210920",
+        "rating":  4.9
+    },
+    {
+        "id":  "organic-wildflower-honey-var-11",
+        "title":  "Organic Wildflower Honey (Var 11)",
+        "price":  406,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure wildflower honey — unprocessed, raw and jarred locally. Sourced near Himachal Pradesh. Certified: EU Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "gluten-free"
+                 ],
+        "stock":  54,
+        "sku":  "SKU-399639",
+        "rating":  4.6
+    },
+    {
+        "id":  "multi-grain-atta-whole-var-11",
+        "title":  "Multi-Grain Atta (Whole) (Var 11)",
+        "price":  158,
+        "unit":  "1kg",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Stone-ground multi-grain atta with wheat, ragi, jowar \u0026 bajra. Sourced near Maharashtra. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "a2",
+                     "gluten-free",
+                     "unprocessed"
+                 ],
+        "stock":  66,
+        "sku":  "SKU-456428",
+        "rating":  4
+    },
+    {
+        "id":  "sendha-namak-rock-salt-var-11",
+        "title":  "Sendha Namak (Rock Salt) (Var 11)",
+        "price":  61,
+        "unit":  "500g",
+        "category":  "Salt \u0026 Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Natural rock salt — mineral rich, unrefined and hand-packed. Sourced near Jaipur, Rajasthan. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "organic",
+                     "vegan"
+                 ],
+        "stock":  10,
+        "sku":  "SKU-216831",
+        "rating":  4
+    },
+    {
+        "id":  "organic-turmeric-powder-var-11",
+        "title":  "Organic Turmeric Powder (Var 11)",
+        "price":  142,
+        "unit":  "250g",
+        "category":  "Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "High-curcumin turmeric, sun-dried and finely powdered. Sourced near Maharashtra. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "cold-pressed",
+                     "organic",
+                     "raw"
+                 ],
+        "stock":  79,
+        "sku":  "SKU-490569",
+        "rating":  3.9
+    },
+    {
+        "id":  "ginger-garlic-pickle-homestyle-var-11",
+        "title":  "Ginger Garlic Pickle (Homestyle) (Var 11)",
+        "price":  184,
+        "unit":  "300g",
+        "category":  "Pickles \u0026 Chutneys",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Homestyle achar with mustard oil and traditional spices. Sourced near Madhya Pradesh. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "handmade",
+                     "raw"
+                 ],
+        "stock":  21,
+        "sku":  "SKU-522746",
+        "rating":  4
+    },
+    {
+        "id":  "cold-pressed-coconut-oil-var-11",
+        "title":  "Cold-Pressed Coconut Oil (Var 11)",
+        "price":  412,
+        "unit":  "500ml",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Unrefined virgin coconut oil — multi-purpose for cooking \u0026 skin. Sourced near Karnataka. Certified: EU Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "vegan",
+                     "organic",
+                     "raw",
+                     "handmade"
+                 ],
+        "stock":  44,
+        "sku":  "SKU-927103",
+        "rating":  4.8
+    },
+    {
+        "id":  "finger-millet-ragi-flour-var-11",
+        "title":  "Finger Millet (Ragi) Flour (Var 11)",
+        "price":  92,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Nutrient dense ragi flour — ideal for porridge and rotis. Sourced near Uttarakhand. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "vegan"
+                 ],
+        "stock":  52,
+        "sku":  "SKU-540883",
+        "rating":  4.4
+    },
+    {
+        "id":  "herbal-detox-tea-blend-var-11",
+        "title":  "Herbal Detox Tea Blend (Var 11)",
+        "price":  203,
+        "unit":  "50g",
+        "category":  "Beverages \u0026 Tea",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Loose leaf blend — tulsi, ginger, cinnamon and lemongrass. Sourced near Maharashtra. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "organic",
+                     "local"
+                 ],
+        "stock":  93,
+        "sku":  "SKU-480871",
+        "rating":  4.9
+    },
+    {
+        "id":  "organic-mustard-seeds-var-11",
+        "title":  "Organic Mustard Seeds (Var 11)",
+        "price":  119,
+        "unit":  "250g",
+        "category":  "Seeds \u0026 Staples",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Small brown mustard seeds for pickling and tempering. Sourced near Madhya Pradesh. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  "local",
+        "stock":  111,
+        "sku":  "SKU-335167",
+        "rating":  4.2
+    },
+    {
+        "id":  "rajgira-flour-amaranth-var-11",
+        "title":  "Rajgira Flour (Amaranth) (Var 11)",
+        "price":  212,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Gluten-free amaranth flour — good for fasting recipes and baking. Sourced near Punjab. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "vegan",
+                     "unprocessed"
+                 ],
+        "stock":  105,
+        "sku":  "SKU-603281",
+        "rating":  4.3
+    },
+    {
+        "id":  "organic-jaggery-powder-var-12",
+        "title":  "Organic Jaggery Powder (Var 12)",
+        "price":  239,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure organic jaggery. Sourced near Punjab. Certified: USDA Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "cold-pressed",
+                     "gluten-free"
+                 ],
+        "stock":  51,
+        "sku":  "SKU-606305",
+        "rating":  4.1
+    },
+    {
+        "id":  "cold-pressed-mustard-oil-var-12",
+        "title":  "Cold-Pressed Mustard Oil (Var 12)",
+        "price":  351,
+        "unit":  "1L",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Cold-pressed from organic mustard seeds. Sourced near Maharashtra. Certified: USDA Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "local"
+                 ],
+        "stock":  88,
+        "sku":  "SKU-406906",
+        "rating":  3.8
+    },
+    {
+        "id":  "organic-a2-ghee-var-12",
+        "title":  "Organic A2 Ghee (Var 12)",
+        "price":  925,
+        "unit":  "500ml",
+        "category":  "Dairy",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Premium A2 bilona ghee from grass-fed cows. Sourced near Maharashtra. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "raw"
+                 ],
+        "stock":  27,
+        "sku":  "SKU-727408",
+        "rating":  4.8
+    },
+    {
+        "id":  "organic-jaggery-cube-var-12",
+        "title":  "Organic Jaggery Cube (Var 12)",
+        "price":  187,
+        "unit":  "250g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Handmade organic jaggery cubes. Sourced near Jaipur, Rajasthan. Certified: USDA Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "vegan",
+                     "local"
+                 ],
+        "stock":  80,
+        "sku":  "SKU-717148",
+        "rating":  4.4
+    },
+    {
+        "id":  "organic-wildflower-honey-var-12",
+        "title":  "Organic Wildflower Honey (Var 12)",
+        "price":  423,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure wildflower honey — unprocessed, raw and jarred locally. Sourced near Punjab. Certified: USDA Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "vegan",
+                     "organic",
+                     "raw"
+                 ],
+        "stock":  76,
+        "sku":  "SKU-157437",
+        "rating":  4.3
+    },
+    {
+        "id":  "multi-grain-atta-whole-var-12",
+        "title":  "Multi-Grain Atta (Whole) (Var 12)",
+        "price":  166,
+        "unit":  "1kg",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Stone-ground multi-grain atta with wheat, ragi, jowar \u0026 bajra. Sourced near Jaipur, Rajasthan. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  "a2",
+        "stock":  80,
+        "sku":  "SKU-505800",
+        "rating":  4.2
+    },
+    {
+        "id":  "sendha-namak-rock-salt-var-12",
+        "title":  "Sendha Namak (Rock Salt) (Var 12)",
+        "price":  61,
+        "unit":  "500g",
+        "category":  "Salt \u0026 Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Natural rock salt — mineral rich, unrefined and hand-packed. Sourced near Jaipur, Rajasthan. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "handmade"
+                 ],
+        "stock":  47,
+        "sku":  "SKU-652861",
+        "rating":  5
+    },
+    {
+        "id":  "organic-turmeric-powder-var-12",
+        "title":  "Organic Turmeric Powder (Var 12)",
+        "price":  137,
+        "unit":  "250g",
+        "category":  "Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "High-curcumin turmeric, sun-dried and finely powdered. Sourced near Himachal Pradesh. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "local",
+                     "unprocessed"
+                 ],
+        "stock":  112,
+        "sku":  "SKU-740275",
+        "rating":  4.3
+    },
+    {
+        "id":  "ginger-garlic-pickle-homestyle-var-12",
+        "title":  "Ginger Garlic Pickle (Homestyle) (Var 12)",
+        "price":  179,
+        "unit":  "300g",
+        "category":  "Pickles \u0026 Chutneys",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Homestyle achar with mustard oil and traditional spices. Sourced near Punjab. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "vegan",
+                     "handmade",
+                     "gluten-free"
+                 ],
+        "stock":  86,
+        "sku":  "SKU-266502",
+        "rating":  4
+    },
+    {
+        "id":  "cold-pressed-coconut-oil-var-12",
+        "title":  "Cold-Pressed Coconut Oil (Var 12)",
+        "price":  431,
+        "unit":  "500ml",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Unrefined virgin coconut oil — multi-purpose for cooking \u0026 skin. Sourced near Maharashtra. Certified: EU Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "organic",
+                     "gluten-free",
+                     "vegan"
+                 ],
+        "stock":  46,
+        "sku":  "SKU-635801",
+        "rating":  4.2
+    },
+    {
+        "id":  "finger-millet-ragi-flour-var-12",
+        "title":  "Finger Millet (Ragi) Flour (Var 12)",
+        "price":  97,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Nutrient dense ragi flour — ideal for porridge and rotis. Sourced near Maharashtra. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "unprocessed",
+                     "handmade"
+                 ],
+        "stock":  107,
+        "sku":  "SKU-793111",
+        "rating":  4.1
+    },
+    {
+        "id":  "herbal-detox-tea-blend-var-12",
+        "title":  "Herbal Detox Tea Blend (Var 12)",
+        "price":  207,
+        "unit":  "50g",
+        "category":  "Beverages \u0026 Tea",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Loose leaf blend — tulsi, ginger, cinnamon and lemongrass. Sourced near Himachal Pradesh. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  "organic",
+        "stock":  27,
+        "sku":  "SKU-664052",
+        "rating":  4.9
+    },
+    {
+        "id":  "organic-mustard-seeds-var-12",
+        "title":  "Organic Mustard Seeds (Var 12)",
+        "price":  124,
+        "unit":  "250g",
+        "category":  "Seeds \u0026 Staples",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Small brown mustard seeds for pickling and tempering. Sourced near Himachal Pradesh. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "a2",
+                     "unprocessed",
+                     "gluten-free"
+                 ],
+        "stock":  21,
+        "sku":  "SKU-430163",
+        "rating":  4.2
+    },
+    {
+        "id":  "rajgira-flour-amaranth-var-12",
+        "title":  "Rajgira Flour (Amaranth) (Var 12)",
+        "price":  214,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Gluten-free amaranth flour — good for fasting recipes and baking. Sourced near Uttarakhand. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "raw",
+                     "a2"
+                 ],
+        "stock":  66,
+        "sku":  "SKU-325284",
+        "rating":  4.6
+    },
+    {
+        "id":  "organic-jaggery-powder-var-13",
+        "title":  "Organic Jaggery Powder (Var 13)",
+        "price":  242,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure organic jaggery. Sourced near Punjab. Certified: EU Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "local",
+                     "raw"
+                 ],
+        "stock":  6,
+        "sku":  "SKU-532475",
+        "rating":  4.7
+    },
+    {
+        "id":  "cold-pressed-mustard-oil-var-13",
+        "title":  "Cold-Pressed Mustard Oil (Var 13)",
+        "price":  362,
+        "unit":  "1L",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Cold-pressed from organic mustard seeds. Sourced near Karnataka. Certified: Jaivik Bharat.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "raw",
+                     "handmade",
+                     "cold-pressed"
+                 ],
+        "stock":  41,
+        "sku":  "SKU-893211",
+        "rating":  4
+    },
+    {
+        "id":  "organic-a2-ghee-var-13",
+        "title":  "Organic A2 Ghee (Var 13)",
+        "price":  947,
+        "unit":  "500ml",
+        "category":  "Dairy",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Premium A2 bilona ghee from grass-fed cows. Sourced near Madhya Pradesh. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "vegan"
+                 ],
+        "stock":  105,
+        "sku":  "SKU-267783",
+        "rating":  3.9
+    },
+    {
+        "id":  "organic-jaggery-cube-var-13",
+        "title":  "Organic Jaggery Cube (Var 13)",
+        "price":  177,
+        "unit":  "250g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Handmade organic jaggery cubes. Sourced near Jaipur, Rajasthan. Certified: India Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "raw",
+                     "a2"
+                 ],
+        "stock":  53,
+        "sku":  "SKU-716091",
+        "rating":  4.4
+    },
+    {
+        "id":  "organic-wildflower-honey-var-13",
+        "title":  "Organic Wildflower Honey (Var 13)",
+        "price":  422,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure wildflower honey — unprocessed, raw and jarred locally. Sourced near Madhya Pradesh. Certified: India Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "cold-pressed",
+                     "local"
+                 ],
+        "stock":  59,
+        "sku":  "SKU-285815",
+        "rating":  3.9
+    },
+    {
+        "id":  "multi-grain-atta-whole-var-13",
+        "title":  "Multi-Grain Atta (Whole) (Var 13)",
+        "price":  158,
+        "unit":  "1kg",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Stone-ground multi-grain atta with wheat, ragi, jowar \u0026 bajra. Sourced near Uttarakhand. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "gluten-free"
+                 ],
+        "stock":  3,
+        "sku":  "SKU-280975",
+        "rating":  4.2
+    },
+    {
+        "id":  "sendha-namak-rock-salt-var-13",
+        "title":  "Sendha Namak (Rock Salt) (Var 13)",
+        "price":  59,
+        "unit":  "500g",
+        "category":  "Salt \u0026 Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Natural rock salt — mineral rich, unrefined and hand-packed. Sourced near Jaipur, Rajasthan. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "a2",
+                     "local"
+                 ],
+        "stock":  83,
+        "sku":  "SKU-918601",
+        "rating":  4.8
+    },
+    {
+        "id":  "organic-turmeric-powder-var-13",
+        "title":  "Organic Turmeric Powder (Var 13)",
+        "price":  139,
+        "unit":  "250g",
+        "category":  "Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "High-curcumin turmeric, sun-dried and finely powdered. Sourced near Madhya Pradesh. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "vegan"
+                 ],
+        "stock":  109,
+        "sku":  "SKU-874501",
+        "rating":  4
+    },
+    {
+        "id":  "ginger-garlic-pickle-homestyle-var-13",
+        "title":  "Ginger Garlic Pickle (Homestyle) (Var 13)",
+        "price":  186,
+        "unit":  "300g",
+        "category":  "Pickles \u0026 Chutneys",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Homestyle achar with mustard oil and traditional spices. Sourced near Jaipur, Rajasthan. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "raw",
+                     "local"
+                 ],
+        "stock":  40,
+        "sku":  "SKU-750463",
+        "rating":  5
+    },
+    {
+        "id":  "cold-pressed-coconut-oil-var-13",
+        "title":  "Cold-Pressed Coconut Oil (Var 13)",
+        "price":  418,
+        "unit":  "500ml",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Unrefined virgin coconut oil — multi-purpose for cooking \u0026 skin. Sourced near Karnataka. Certified: EU Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "organic",
+                     "unprocessed",
+                     "gluten-free",
+                     "vegan"
+                 ],
+        "stock":  55,
+        "sku":  "SKU-242101",
+        "rating":  3.9
+    },
+    {
+        "id":  "finger-millet-ragi-flour-var-13",
+        "title":  "Finger Millet (Ragi) Flour (Var 13)",
+        "price":  92,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Nutrient dense ragi flour — ideal for porridge and rotis. Sourced near Karnataka. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "vegan",
+                     "unprocessed",
+                     "gluten-free"
+                 ],
+        "stock":  59,
+        "sku":  "SKU-591943",
+        "rating":  4.5
+    },
+    {
+        "id":  "herbal-detox-tea-blend-var-13",
+        "title":  "Herbal Detox Tea Blend (Var 13)",
+        "price":  192,
+        "unit":  "50g",
+        "category":  "Beverages \u0026 Tea",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Loose leaf blend — tulsi, ginger, cinnamon and lemongrass. Sourced near Jaipur, Rajasthan. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "gluten-free",
+                     "local"
+                 ],
+        "stock":  45,
+        "sku":  "SKU-133530",
+        "rating":  4.4
+    },
+    {
+        "id":  "organic-mustard-seeds-var-13",
+        "title":  "Organic Mustard Seeds (Var 13)",
+        "price":  123,
+        "unit":  "250g",
+        "category":  "Seeds \u0026 Staples",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Small brown mustard seeds for pickling and tempering. Sourced near Himachal Pradesh. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "gluten-free"
+                 ],
+        "stock":  7,
+        "sku":  "SKU-749969",
+        "rating":  4.7
+    },
+    {
+        "id":  "rajgira-flour-amaranth-var-13",
+        "title":  "Rajgira Flour (Amaranth) (Var 13)",
+        "price":  218,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Gluten-free amaranth flour — good for fasting recipes and baking. Sourced near Maharashtra. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "local",
+                     "unprocessed",
+                     "organic"
+                 ],
+        "stock":  17,
+        "sku":  "SKU-372998",
+        "rating":  4.5
+    },
+    {
+        "id":  "organic-jaggery-powder-var-14",
+        "title":  "Organic Jaggery Powder (Var 14)",
+        "price":  237,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure organic jaggery. Sourced near Punjab. Certified: USDA Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  "gluten-free",
+        "stock":  105,
+        "sku":  "SKU-307159",
+        "rating":  4.3
+    },
+    {
+        "id":  "cold-pressed-mustard-oil-var-14",
+        "title":  "Cold-Pressed Mustard Oil (Var 14)",
+        "price":  346,
+        "unit":  "1L",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Cold-pressed from organic mustard seeds. Sourced near Himachal Pradesh. Certified: USDA Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Himachal Pradesh",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "a2",
+                     "unprocessed"
+                 ],
+        "stock":  64,
+        "sku":  "SKU-773170",
+        "rating":  4
+    },
+    {
+        "id":  "organic-a2-ghee-var-14",
+        "title":  "Organic A2 Ghee (Var 14)",
+        "price":  942,
+        "unit":  "500ml",
+        "category":  "Dairy",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Premium A2 bilona ghee from grass-fed cows. Sourced near Punjab. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  "vegan",
+        "stock":  12,
+        "sku":  "SKU-486260",
+        "rating":  4.2
+    },
+    {
+        "id":  "organic-jaggery-cube-var-14",
+        "title":  "Organic Jaggery Cube (Var 14)",
+        "price":  180,
+        "unit":  "250g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Handmade organic jaggery cubes. Sourced near Jaipur, Rajasthan. Certified: India Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "organic",
+                     "handmade"
+                 ],
+        "stock":  56,
+        "sku":  "SKU-468422",
+        "rating":  4
+    },
+    {
+        "id":  "organic-wildflower-honey-var-14",
+        "title":  "Organic Wildflower Honey (Var 14)",
+        "price":  413,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure wildflower honey — unprocessed, raw and jarred locally. Sourced near Jaipur, Rajasthan. Certified: India Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "a2",
+                     "gluten-free"
+                 ],
+        "stock":  32,
+        "sku":  "SKU-324466",
+        "rating":  4.5
+    },
+    {
+        "id":  "multi-grain-atta-whole-var-14",
+        "title":  "Multi-Grain Atta (Whole) (Var 14)",
+        "price":  164,
+        "unit":  "1kg",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Stone-ground multi-grain atta with wheat, ragi, jowar \u0026 bajra. Sourced near Madhya Pradesh. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "organic",
+                     "cold-pressed"
+                 ],
+        "stock":  42,
+        "sku":  "SKU-811615",
+        "rating":  4.7
+    },
+    {
+        "id":  "sendha-namak-rock-salt-var-14",
+        "title":  "Sendha Namak (Rock Salt) (Var 14)",
+        "price":  60,
+        "unit":  "500g",
+        "category":  "Salt \u0026 Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Natural rock salt — mineral rich, unrefined and hand-packed. Sourced near Punjab. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "local",
+                     "organic",
+                     "gluten-free"
+                 ],
+        "stock":  18,
+        "sku":  "SKU-100961",
+        "rating":  4.6
+    },
+    {
+        "id":  "organic-turmeric-powder-var-14",
+        "title":  "Organic Turmeric Powder (Var 14)",
+        "price":  138,
+        "unit":  "250g",
+        "category":  "Spices",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "High-curcumin turmeric, sun-dried and finely powdered. Sourced near Jaipur, Rajasthan. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "raw",
+                     "gluten-free"
+                 ],
+        "stock":  97,
+        "sku":  "SKU-565738",
+        "rating":  4.3
+    },
+    {
+        "id":  "ginger-garlic-pickle-homestyle-var-14",
+        "title":  "Ginger Garlic Pickle (Homestyle) (Var 14)",
+        "price":  183,
+        "unit":  "300g",
+        "category":  "Pickles \u0026 Chutneys",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Homestyle achar with mustard oil and traditional spices. Sourced near Jaipur, Rajasthan. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "gluten-free",
+                     "local",
+                     "vegan",
+                     "handmade"
+                 ],
+        "stock":  80,
+        "sku":  "SKU-226874",
+        "rating":  4.4
+    },
+    {
+        "id":  "cold-pressed-coconut-oil-var-14",
+        "title":  "Cold-Pressed Coconut Oil (Var 14)",
+        "price":  429,
+        "unit":  "500ml",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Unrefined virgin coconut oil — multi-purpose for cooking \u0026 skin. Sourced near Madhya Pradesh. Certified: Jaivik Bharat.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "unprocessed",
+                     "gluten-free"
+                 ],
+        "stock":  14,
+        "sku":  "SKU-571986",
+        "rating":  4.9
+    },
+    {
+        "id":  "finger-millet-ragi-flour-var-14",
+        "title":  "Finger Millet (Ragi) Flour (Var 14)",
+        "price":  93,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Nutrient dense ragi flour — ideal for porridge and rotis. Sourced near Karnataka. Certified: India Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Karnataka",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "handmade"
+                 ],
+        "stock":  90,
+        "sku":  "SKU-523048",
+        "rating":  5
+    },
+    {
+        "id":  "herbal-detox-tea-blend-var-14",
+        "title":  "Herbal Detox Tea Blend (Var 14)",
+        "price":  193,
+        "unit":  "50g",
+        "category":  "Beverages \u0026 Tea",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Loose leaf blend — tulsi, ginger, cinnamon and lemongrass. Sourced near Maharashtra. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Maharashtra",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "local",
+                     "gluten-free",
+                     "organic",
+                     "handmade"
+                 ],
+        "stock":  46,
+        "sku":  "SKU-503942",
+        "rating":  4.1
+    },
+    {
+        "id":  "organic-mustard-seeds-var-14",
+        "title":  "Organic Mustard Seeds (Var 14)",
+        "price":  119,
+        "unit":  "250g",
+        "category":  "Seeds \u0026 Staples",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Small brown mustard seeds for pickling and tempering. Sourced near Punjab. Certified: USDA Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "USDA Organic"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "gluten-free",
+                     "vegan",
+                     "unprocessed"
+                 ],
+        "stock":  46,
+        "sku":  "SKU-304512",
+        "rating":  3.9
+    },
+    {
+        "id":  "rajgira-flour-amaranth-var-14",
+        "title":  "Rajgira Flour (Amaranth) (Var 14)",
+        "price":  208,
+        "unit":  "500g",
+        "category":  "Flour \u0026 Grains",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Gluten-free amaranth flour — good for fasting recipes and baking. Sourced near Jaipur, Rajasthan. Certified: Jaivik Bharat.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Jaipur, Rajasthan",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  "raw",
+        "stock":  115,
+        "sku":  "SKU-306594",
+        "rating":  3.9
+    },
+    {
+        "id":  "organic-jaggery-powder-var-15",
+        "title":  "Organic Jaggery Powder (Var 15)",
+        "price":  237,
+        "unit":  "500g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Pure organic jaggery. Sourced near Madhya Pradesh. Certified: Jaivik Bharat.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Madhya Pradesh",
+        "certifications":  [
+                               "Jaivik Bharat"
+                           ],
+        "tags":  [
+                     "cold-pressed",
+                     "gluten-free",
+                     "unprocessed",
+                     "a2"
+                 ],
+        "stock":  16,
+        "sku":  "SKU-301186",
+        "rating":  4.7
+    },
+    {
+        "id":  "cold-pressed-mustard-oil-var-15",
+        "title":  "Cold-Pressed Mustard Oil (Var 15)",
+        "price":  354,
+        "unit":  "1L",
+        "category":  "Oils",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Cold-pressed from organic mustard seeds. Sourced near Punjab. Certified: EU Organic.",
+        "ingredients":  "Mustard seeds",
+        "origin":  "Punjab",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  "handmade",
+        "stock":  110,
+        "sku":  "SKU-523695",
+        "rating":  4.5
+    },
+    {
+        "id":  "organic-a2-ghee-var-15",
+        "title":  "Organic A2 Ghee (Var 15)",
+        "price":  965,
+        "unit":  "500ml",
+        "category":  "Dairy",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Premium A2 bilona ghee from grass-fed cows. Sourced near Uttarakhand. Certified: EU Organic.",
+        "ingredients":  "Natural ingredients",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "EU Organic"
+                           ],
+        "tags":  [
+                     "handmade",
+                     "vegan",
+                     "gluten-free",
+                     "raw"
+                 ],
+        "stock":  73,
+        "sku":  "SKU-983778",
+        "rating":  3.8
+    },
+    {
+        "id":  "organic-jaggery-cube-var-15",
+        "title":  "Organic Jaggery Cube (Var 15)",
+        "price":  175,
+        "unit":  "250g",
+        "category":  "Sweeteners",
+        "image":  "https://source.unsplash.com/600x600/?,organic,food",
+        "description":  "Handmade organic jaggery cubes. Sourced near Uttarakhand. Certified: India Organic.",
+        "ingredients":  "Raw sugarcane juice",
+        "origin":  "Uttarakhand",
+        "certifications":  [
+                               "India Organic"
+                           ],
+        "tags":  [
+                     "vegan",
+                     "local"
+                 ],
+        "stock":  37,
+        "sku":  "SKU-355564",
+        "rating":  4.6
+    }
 ]
-
