@@ -1,112 +1,118 @@
 import React, { useEffect, useState } from "react";
 
+/**
+ * Admin page - edit product catalog and push to GitHub via /api/update-products
+ * NOTE: This client asks for an admin password when committing. Keep ADMIN_PASSWORD secret in Vercel env.
+ */
 export default function Admin(){
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [editing, setEditing] = useState(null);
-  const [form, setForm] = useState({ id:"", title:"", price:"", unit:"", category:"", image:"/images/placeholder.svg", description:"" });
-  const [password, setPassword] = useState("");
+  const blank = { id:"", sku:"", title:"", price:0, unit:"250g", category:"Misc", image:"/images/placeholder-hero.jpg", description:"", ingredients:"", origin:"", certifications:[], tags:[], stock:10 };
+  const [form, setForm] = useState(blank);
+  const [editingIndex, setEditingIndex] = useState(-1);
   const [busy, setBusy] = useState(false);
 
   useEffect(()=> {
-    fetch("/products.json")
-      .then(r=> r.ok ? r.json() : Promise.reject("no products"))
-      .then(data => { setProducts(Array.isArray(data) ? data : []); setLoading(false); })
-      .catch(() => { setProducts([]); setLoading(false); });
-  }, []);
+    fetch("/products.json").then(r=>r.json()).then(d=>{
+      setProducts(Array.isArray(d)?d:[]);
+      setLoading(false);
+    }).catch(e=>{
+      setProducts([]);
+      setLoading(false);
+    });
+  },[]);
 
-  function resetForm(){
-    setEditing(null);
-    setForm({ id:"", title:"", price:"", unit:"", category:"", image:"/images/placeholder.svg", description:"" });
-  }
-
-  function startEdit(p){
-    setEditing(p.id);
-    setForm({...p});
+  function startEdit(i){
+    setEditingIndex(i);
+    setForm(Object.assign({}, products[i]));
     window.scrollTo(0,0);
   }
+  function resetForm(){
+    setEditingIndex(-1); setForm(Object.assign({}, blank));
+  }
+  function saveLocal(){
+    const copy = [...products];
+    if(editingIndex >= 0){
+      copy[editingIndex] = {...form};
+    } else {
+      // ensure id
+      if(!form.id) form.id = (form.title || "prod-" + Date.now()).toLowerCase().replace(/[^a-z0-9\-]/g,"-");
+      copy.unshift({...form});
+    }
+    setProducts(copy);
+    resetForm();
+    alert("Saved locally. Click 'Commit to GitHub' to persist.");
+    console.log(JSON.stringify(copy,null,2));
+  }
+  function remove(i){
+    if(!confirm("Delete this product?")) return;
+    const copy = products.filter((_,idx)=>idx!==i);
+    setProducts(copy);
+    alert("Removed locally. Commit to persist.");
+  }
 
-  async function persist(nextProducts){
-    if (!password) return alert("Enter admin password");
+  async function commitToGit(){
+    const pwd = prompt("Enter ADMIN password to commit (stored in server env variable)");
+    if(!pwd){ alert("Aborted"); return; }
     setBusy(true);
     try {
       const res = await fetch("/api/update-products", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ products: nextProducts, password })
+        headers: { "Content-Type":"application/json" },
+        body: JSON.stringify({ products, password: pwd })
       });
-      const js = await res.json();
-      if (!res.ok) throw js;
-      alert("Saved to GitHub (commit: " + (js.commit || "unknown") + ")");
-      // after successful commit, update client state and refresh public/products.json by forcing reload
-      setProducts(nextProducts);
-      // option: reload after short delay to pick up CDN: location.reload();
-    } catch (e) {
-      console.error(e);
-      alert("Save failed: " + (e && (e.error || e.message || JSON.stringify(e))));
+      const data = await res.json();
+      if(!res.ok) throw new Error(data?.message || "Failed");
+      alert("Products committed: " + data.message);
+    } catch(err){
+      alert("Commit failed: " + (err.message || err));
     } finally { setBusy(false); }
   }
 
-  function save(){
-    const next = editing ? products.map(x => x.id===editing ? ({...form}) : x) : [{...form, id: form.id || 'prod-'+Date.now()}, ...products];
-    // update in-memory immediately and then call server
-    setProducts(next);
-    resetForm();
-    persist(next);
-  }
-
-  function remove(id){
-    if (!confirm("Delete product?")) return;
-    const next = products.filter(x => x.id !== id);
-    setProducts(next);
-    persist(next);
-  }
-
-  if (loading) return <div style={{padding:20}}>Loading products...</div>;
+  if(loading) return <div style={{padding:20}}>Loading...</div>;
 
   return (
-    <div style={{padding:24, fontFamily:'Inter, Arial, sans-serif'}}>
-      <h1>Admin Dashboard</h1>
-      <div style={{marginBottom:12}}>
-        <label style={{marginRight:8}}>Admin password:</label>
-        <input type="password" value={password} onChange={e=>setPassword(e.target.value)} style={{marginRight:8}}/>
-        <button disabled={busy} onClick={async ()=> {
-          // quick validate by fetching /api/update-products with a test (non-destructive) ping is not implemented;
-          alert("Password stored locally for this session. Save will use it to commit.");
-        }}>Set</button>
-      </div>
-
-      <div style={{display:'flex', gap:20}}>
-        <div style={{flex:1, minWidth:320}}>
-          <h3>{editing ? "Edit product" : "Add new product"}</h3>
-          <div style={{display:'grid', gap:8}}>
-            <input placeholder="id (unique)" value={form.id} onChange={e=>setForm({...form,id:e.target.value})}/>
-            <input placeholder="title" value={form.title} onChange={e=>setForm({...form,title:e.target.value})}/>
-            <input placeholder="price" value={form.price} onChange={e=>setForm({...form,price:e.target.value})}/>
-            <input placeholder="unit (e.g. 500g)" value={form.unit} onChange={e=>setForm({...form,unit:e.target.value})}/>
-            <input placeholder="category" value={form.category} onChange={e=>setForm({...form,category:e.target.value})}/>
-            <input placeholder="image path (/images/..)" value={form.image} onChange={e=>setForm({...form,image:e.target.value})}/>
-            <textarea placeholder="description" value={form.description} onChange={e=>setForm({...form,description:e.target.value})}/>
-            <div style={{display:'flex', gap:8}}>
-              <button onClick={save} disabled={busy} style={{padding:'8px 12px'}}>{busy ? "Saving…" : (editing ? "Save changes" : "Add product")}</button>
-              <button onClick={resetForm} style={{padding:'8px 12px'}}>Reset</button>
-            </div>
+    <div style={{padding:20}}>
+      <h2>Admin — Products</h2>
+      <div style={{display:"flex",gap:20,flexWrap:"wrap"}}>
+        <div style={{flex:"1 1 320px",minWidth:320,background:"#fff",padding:14,borderRadius:8,boxShadow:"0 6px 18px rgba(15,23,42,0.06)"}}>
+          <h3>{editingIndex>=0 ? "Edit product" : "New product"}</h3>
+          <input placeholder="id (optional)" value={form.id} onChange={e=>setForm({...form,id:e.target.value})} style={{width:"100%",marginBottom:8}} />
+          <input placeholder="SKU" value={form.sku||""} onChange={e=>setForm({...form,sku:e.target.value})} style={{width:"100%",marginBottom:8}} />
+          <input placeholder="Title" value={form.title} onChange={e=>setForm({...form,title:e.target.value})} style={{width:"100%",marginBottom:8}} />
+          <input placeholder="Price" type="number" value={form.price} onChange={e=>setForm({...form,price:parseFloat(e.target.value||0)})} style={{width:"48%",marginRight:"4%",marginBottom:8}} />
+          <input placeholder="Unit (e.g. 500g)" value={form.unit} onChange={e=>setForm({...form,unit:e.target.value})} style={{width:"48%",marginBottom:8}} />
+          <input placeholder="Category" value={form.category} onChange={e=>setForm({...form,category:e.target.value})} style={{width:"100%",marginBottom:8}} />
+          <input placeholder="Image path (public/images/...)" value={form.image} onChange={e=>setForm({...form,image:e.target.value})} style={{width:"100%",marginBottom:8}} />
+          <textarea placeholder="Short description" value={form.description} onChange={e=>setForm({...form,description:e.target.value})} style={{width:"100%",height:80,marginBottom:8}} />
+          <textarea placeholder="Ingredients (comma separated)" value={form.ingredients} onChange={e=>setForm({...form,ingredients:e.target.value})} style={{width:"100%",height:60,marginBottom:8}} />
+          <input placeholder="Origin (e.g. Haryana, India)" value={form.origin} onChange={e=>setForm({...form,origin:e.target.value})} style={{width:"100%",marginBottom:8}} />
+          <input placeholder="Certifications (comma separated)" value={ (form.certifications||[]).join(", ") } onChange={e=>setForm({...form,certifications: e.target.value.split(",").map(s=>s.trim()).filter(Boolean) })} style={{width:"100%",marginBottom:8}} />
+          <input placeholder="Tags (comma separated)" value={ (form.tags||[]).join(", ") } onChange={e=>setForm({...form,tags: e.target.value.split(",").map(s=>s.trim()).filter(Boolean) })} style={{width:"100%",marginBottom:8}} />
+          <input placeholder="Stock" type="number" value={form.stock||0} onChange={e=>setForm({...form,stock:parseInt(e.target.value||0)})} style={{width:"100%",marginBottom:8}} />
+          <div style={{display:"flex",gap:8}}>
+            <button onClick={saveLocal}>Save locally</button>
+            <button onClick={resetForm}>Reset</button>
+            <button onClick={commitToGit} disabled={busy} style={{marginLeft:"auto",background:"#0ea5a4",color:"#fff"}}>{busy ? "Committing..." : "Commit to GitHub"}</button>
           </div>
         </div>
 
-        <div style={{flex:2}}>
+        <div style={{flex:"2 1 520px"}}>
           <h3>Products ({products.length})</h3>
-          <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(260px,1fr))', gap:12}}>
-            {products.map(p => (
-              <div key={p.id} style={{background:'#fff', padding:12, borderRadius:8, boxShadow:'0 6px 18px rgba(0,0,0,0.04)'}}>
-                <div style={{display:'flex', justifyContent:'space-between'}}>
-                  <strong>{p.title}</strong>
-                  <span style={{color:'#666'}}>?{p.price} / {p.unit}</span>
-                </div>
-                <div style={{marginTop:6, color:'#444'}}>{p.description?.slice(0,90)}</div>
-                <div style={{display:'flex', gap:8, marginTop:10}}>
-                  <button onClick={()=>startEdit(p)}>Edit</button>
-                  <button onClick={()=>remove(p.id)}>Delete</button>
+          <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(240px,1fr))",gap:12}}>
+            {products.map((p, i) => (
+              <div key={p.id || i} style={{padding:12,background:"#fff",borderRadius:8,boxShadow:"0 6px 18px rgba(15,23,42,0.04)"}}>
+                <div style={{display:"flex",gap:10}}>
+                  <img src={p.image||"/images/placeholder-hero.jpg"} alt={p.title} width="80" height="60" style={{objectFit:"cover",borderRadius:6}} onError={(e)=>e.currentTarget.src="/images/placeholder-hero.jpg"} />
+                  <div style={{flex:1}}>
+                    <strong>{p.title}</strong>
+                    <div style={{fontSize:13,color:"#6b7280"}}>?{p.price} / {p.unit}</div>
+                    <div style={{marginTop:6,fontSize:12,color:"#6b7280"}}>{(p.description||"").slice(0,80)}</div>
+                    <div style={{marginTop:8,display:"flex",gap:6}}>
+                      <button onClick={()=>startEdit(i)}>Edit</button>
+                      <button onClick={()=>remove(i)} style={{background:"#fee2e2"}}>Delete</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
@@ -114,14 +120,12 @@ export default function Admin(){
         </div>
       </div>
 
-      <hr style={{margin:'24px 0'}}/>
-      <div>
-        <h4>How saves work</h4>
-        <ol>
-          <li>Enter admin password (set in Vercel env `ADMIN_PASSWORD`).</li>
-          <li>Click Save ? Admin calls <code>/api/update-products</code> which commits to GitHub using `GITHUB_TOKEN` env var on server.</li>
-          <li>Vercel will auto-deploy the new commit; public <code>/products.json</code> will update for the site.</li>
-        </ol>
+      <div style={{marginTop:22}}>
+        <h4>Notes</h4>
+        <ul>
+          <li>Commit uses server API which requires ADMIN_PASSWORD (set in Vercel env).</li>
+          <li>Server will commit to the repo path specified by GITHUB_REPO and GITHUB_PRODUCTS_PATH env vars.</li>
+        </ul>
       </div>
     </div>
   );

@@ -1,79 +1,68 @@
-// api/update-products.js
-const base64 = (s) => Buffer.from(s, "utf8").toString("base64");
+/**
+ * api/update-products.js
+ * POST { products: [...], password: "xxx" }
+ * Uses env:
+ *   GITHUB_TOKEN (personal access token),
+ *   GITHUB_REPO (owner/repo),
+ *   GITHUB_BRANCH (branch e.g. main),
+ *   GITHUB_PRODUCTS_PATH (path to file e.g. public/products.json),
+ *   ADMIN_PASSWORD (expected password)
+ */
+const fetch = (...args) => import("node-fetch").then(({default:fetch})=>fetch(...args));
 
-module.exports = async (req, res) => {
-  if (req.method !== "POST") return res.status(405).json({ error: "Only POST" });
+export default async function handler(req, res) {
+  if (req.method !== "POST") return res.status(405).json({message:"Method not allowed"});
+  const { products, password } = req.body || {};
+  if (!password || password !== process.env.ADMIN_PASSWORD) {
+    return res.status(401).json({ message: "Unauthorized - invalid password" });
+  }
+  if (!products || !Array.isArray(products)) {
+    return res.status(400).json({ message: "Missing products array" });
+  }
+  const token = process.env.GITHUB_TOKEN;
+  const repo = process.env.GITHUB_REPO;
+  const branch = process.env.GITHUB_BRANCH || "main";
+  const path = process.env.GITHUB_PRODUCTS_PATH || "public/products.json";
+
+  if (!token || !repo) return res.status(500).json({ message: "Server misconfigured: missing GITHUB_TOKEN or GITHUB_REPO" });
+
   try {
-    const body = await new Promise((r, rej) => {
-      let data = "";
-      req.on("data", chunk => data += chunk);
-      req.on("end", () => r(JSON.parse(data)));
-      req.on("error", e => rej(e));
-    });
-
-    const { products, password } = body;
-    if (!products) return res.status(400).json({ error: "Missing products" });
-
-    const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
-    const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-    const GITHUB_REPO = process.env.GITHUB_REPO; // e.g. "owner/repo"
-    const GITHUB_BRANCH = process.env.GITHUB_BRANCH || "main";
-    const TARGET_PATH = process.env.GITHUB_PRODUCTS_PATH || "products.json";
-
-    if (!ADMIN_PASSWORD || !GITHUB_TOKEN || !GITHUB_REPO) {
-      return res.status(500).json({ error: "Server not configured (missing env vars)" });
-    }
-    if (password !== ADMIN_PASSWORD) return res.status(401).json({ error: "Unauthorized" });
-
     const apiBase = "https://api.github.com";
-    const [owner, repo] = GITHUB_REPO.split("/");
-
-    const headers = {
-      "Authorization": `token ${GITHUB_TOKEN}`,
-      "User-Agent": "products-updater",
-      "Accept": "application/vnd.github.v3+json"
-    };
-
-    const fileUrl = `${apiBase}/repos/${owner}/${repo}/contents/${encodeURIComponent(TARGET_PATH)}?ref=${encodeURIComponent(GITHUB_BRANCH)}`;
-    const getRes = await fetch(fileUrl, { headers });
+    const [owner, repoName] = repo.split("/");
+    // 1) get existing file to obtain sha (if exists)
+    const getUrl = `${apiBase}/repos/${owner}/${repoName}/contents/${encodeURIComponent(path)}?ref=${encodeURIComponent(branch)}`;
+    const getRes = await fetch(getUrl, { headers: { Authorization: `token ${token}`, "User-Agent":"update-products-script" } });
     let sha = null;
     if (getRes.status === 200) {
-      const js = await getRes.json();
-      sha = js.sha;
-    } else {
-      if (getRes.status !== 404) {
-        const text = await getRes.text();
-        return res.status(502).json({ error: "GitHub GET file error", status: getRes.status, body: text });
-      }
+      const getJson = await getRes.json();
+      sha = getJson.sha;
     }
-
-    const contentString = JSON.stringify(products, null, 2);
-    const b64 = base64(contentString);
-    const commitMessage = `chore: update products.json from admin (${new Date().toISOString()})`;
-
-    const putBody = {
-      message: commitMessage,
-      content: b64,
-      branch: GITHUB_BRANCH
+    // 2) prepare content
+    const contentStr = JSON.stringify(products, null, 2);
+    const contentB64 = Buffer.from(contentStr, "utf8").toString("base64");
+    const commitUrl = `${apiBase}/repos/${owner}/${repoName}/contents/${encodeURIComponent(path)}`;
+    const body = {
+      message: `chore: update products.json via admin UI`,
+      content: contentB64,
+      branch: branch
     };
-    if (sha) putBody.sha = sha;
-
-    const putUrl = `${apiBase}/repos/${owner}/${repo}/contents/${encodeURIComponent(TARGET_PATH)}`;
-
-    const putRes = await fetch(putUrl, {
+    if (sha) body.sha = sha;
+    const putRes = await fetch(commitUrl, {
       method: "PUT",
-      headers: { ...headers, "Content-Type": "application/json" },
-      body: JSON.stringify(putBody)
+      headers: {
+        Authorization: `token ${token}`,
+        "User-Agent": "update-products-script",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(body)
     });
-
     const putJson = await putRes.json();
     if (putRes.status >= 400) {
-      return res.status(502).json({ error: "GitHub PUT error", status: putRes.status, body: putJson });
+      return res.status(500).json({ message: "GitHub commit failed", detail: putJson });
     }
-
-    return res.status(200).json({ ok: true, commit: putJson.commit ? putJson.commit.sha : null });
+    return res.status(200).json({ message: "Committed", commit: putJson.commit?.sha || null });
   } catch (err) {
     console.error(err);
-    return res.status(500).json({ error: "server error", detail: err && err.message });
+    return res.status(500).json({ message: "Internal error", error: String(err) });
   }
-};
+}
