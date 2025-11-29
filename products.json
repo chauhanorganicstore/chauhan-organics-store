@@ -1,0 +1,20 @@
+﻿[
+  {
+    "id": 1,
+    "title": "Organic Jaggery Powder",
+    "category": "Sweeteners",
+    "price": "₹240 / 500g",
+    "img": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=60",
+    "partnerUrl": "https://partner.example.com/jaggery",
+    "desc": "Pure organic jaggery."
+  },
+  {
+    "id": 2,
+    "title": "Cold-Pressed Mustard Oil",
+    "category": "Oils",
+    "price": "₹350 / 1L",
+    "img": "https://images.unsplash.com/photo-1502741126161-b048400d7c8f?auto=format&fit=crop&w=800&q=60",
+    "partnerUrl": "https://partner.example.com/mustard-oil",
+    "desc": "Traditionally cold-pressed from organic mustard seeds."
+  }
+]
