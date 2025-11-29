@@ -1,4 +1,4 @@
-﻿/**
+/**
  * src/utils/checkout.js
  * Open WhatsApp with prefilled cart message
  */
@@ -11,9 +11,9 @@ export function openWhatsAppCheckout(phoneNumber = "919999999999") {
     alert("Cart is empty.");
     return;
   }
-  const lines = cart.map(i => `${i.title} x${i.qty} — ₹${i.price * i.qty}`);
+  const lines = cart.map(i => `${i.title} x${i.qty} � ?${i.price * i.qty}`);
   lines.push("");
-  lines.push("Total: ₹" + cart.reduce((s, i) => s + i.price * i.qty, 0));
+  lines.push("Total: ?" + cart.reduce((s, i) => s + i.price * i.qty, 0));
   lines.push("");
   lines.push("Name: ");
   lines.push("Address: ");

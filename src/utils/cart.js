@@ -1,4 +1,4 @@
-﻿/**
+/**
  * src/utils/cart.js
  * Simple localStorage-based cart utilities
  * Works in browser only. If using SSR (Next.js) guard with typeof window !== "undefined".
