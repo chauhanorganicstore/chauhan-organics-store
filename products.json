@@ -15,6 +15,24 @@
     "price": "₹350 / 1L",
     "img": "https://images.unsplash.com/photo-1502741126161-b048400d7c8f?auto=format&fit=crop&w=800&q=60",
     "partnerUrl": "https://partner.example.com/mustard-oil",
-    "desc": "Traditionally cold-pressed from organic mustard seeds."
+    "desc": "Cold-pressed from organic mustard seeds."
+  },
+  {
+    "id": 3,
+    "title": "Organic A2 Ghee",
+    "category": "Dairy",
+    "price": "₹950 / 500ml",
+    "img": "https://images.unsplash.com/photo-1585238341986-9e8e7b0eb5af?auto=format&fit=crop&w=800&q=60",
+    "partnerUrl": "https://partner.example.com/a2ghee",
+    "desc": "Premium A2 bilona ghee from grass-fed cows."
+  },
+  {
+    "id": 4,
+    "title": "Raw Forest Honey",
+    "category": "Sweeteners",
+    "price": "₹399 / 500g",
+    "img": "https://images.unsplash.com/photo-1505577058444-a3dab90d4253?auto=format&fit=crop&w=800&q=60",
+    "partnerUrl": "https://partner.example.com/honey",
+    "desc": "Unprocessed raw honey collected from forest regions."
   }
 ]
