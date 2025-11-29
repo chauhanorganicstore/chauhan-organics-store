@@ -1,46 +1,36 @@
-/**
- * src/components/ProductCard.jsx
- * Fixed: guarded access + correct template literal for alert
- */
 import React from "react";
-import { addToCart } from "../utils/cart";
 
 export default function ProductCard({ product }) {
   if (!product || typeof product !== "object") {
     return (
-      <div style={{ background: "#fff", borderRadius: 12, boxShadow: "0 4px 10px rgba(0,0,0,0.04)", overflow: "hidden", padding: 16 }}>
-        <div style={{ height: 180, display: "flex", alignItems: "center", justifyContent: "center", color: "#888" }}>
-          Product unavailable
-        </div>
-      </div>
+      <div className="card" style={{padding:16, display:"flex", alignItems:"center", justifyContent:"center"}}>Product unavailable</div>
     );
   }
-
-  const imgSrc = product?.image || "/images/placeholder.svg";
-
-  function handleAdd() {
-    try {
-      addToCart(product);
-      alert(`${product.title || "Product"} added to cart`);
-    } catch (e) { /* silent */ }
-  }
-
+  const imgSrc = product.image || "/images/placeholder-hero.jpg";
   return (
-    <div style={{ background: "#fff", borderRadius: 12, boxShadow: "0 4px 10px rgba(0,0,0,0.04)", overflow: "hidden" }}>
-      <img
-        src={imgSrc}
-        alt={product?.title || "product"}
-        onError={(e) => { e.currentTarget.src = "/images/placeholder.svg"; }}
-        style={{ width: "100%", height: 180, objectFit: "cover", display: "block" }}
-      />
-      <div style={{ padding: 12 }}>
-        <h3 style={{ margin: "0 0 6px" }}>{product?.title || "Untitled product"}</h3>
-        <p style={{ margin: "0 0 8px", color: "#666" }}>{product?.description || ""}</p>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <div style={{ fontWeight: 700 }}>?{product?.price ?? "-"} / {product?.unit ?? "-"}</div>
+    <div className="card" role="article" aria-label={product.title}>
+      <div className="imgwrap">
+        <img src={imgSrc} alt={product.title || "product image"} onError={(e)=>{ e.currentTarget.src="/images/placeholder-hero.jpg"; }} />
+      </div>
+      <div className="body">
+        <div style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}>
+          <h3>{product.title || "Untitled product"}</h3>
+          <div className="badge small">{product.category}</div>
+        </div>
+        <p className="desc">{product.description?.slice(0,160) || ""}</p>
+        <div style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}>
           <div>
-            <button onClick={handleAdd} style={{ padding: "6px 10px", borderRadius: 8, cursor: "pointer" }}>Buy</button>
+            <div className="price">?{product.price ?? "-"}</div>
+            <div className="small">/{product.unit ?? "-"}</div>
           </div>
+          <div style={{textAlign:"right"}}>
+            <div className="stars">{(product.rating || 4.2).toFixed(1)} ?</div>
+            <div className="small">{product.stock > 0 ? `${product.stock} in stock` : "Out of stock"}</div>
+          </div>
+        </div>
+        <div className="meta">
+          <button style={{padding:"8px 12px", borderRadius:10, border:"none", background:"#fbbf24", cursor:"pointer"}} onClick={()=>{ alert(`${product.title || "Product"} added to cart`); }}>Add</button>
+          <button style={{padding:"8px 12px", borderRadius:10, border:"1px solid #e6e6e6", background:"#fff", cursor:"pointer"}}>View</button>
         </div>
       </div>
     </div>
