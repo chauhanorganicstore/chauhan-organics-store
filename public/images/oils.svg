@@ -1,0 +1,9 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="100%" height="100%" fill="#fffaf6"/>
+  <g transform="translate(120,120)">
+    <rect width="420" height="560" rx="22" fill="#fff" opacity="0.95"/>
+    <text x="30" y="60" font-size="34" font-family="Segoe UI, Roboto" fill="#8a6b2f">Oils (Cold-pressed)</text>
+    <ellipse cx="220" cy="320" rx="70" ry="100" fill="#fff3d6" stroke="#f2c76b" stroke-width="6"/>
+  </g>
+  <text x="560" y="480" font-size="26" fill="#6b532a">Healthy cold-pressed oils</text>
+</svg>

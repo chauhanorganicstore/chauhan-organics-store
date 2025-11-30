@@ -1,0 +1,12 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="100%" height="100%" fill="#fff8f2"/>
+  <g transform="translate(100,80)">
+    <rect width="420" height="560" rx="22" fill="#fff" opacity="0.95"/>
+    <text x="30" y="60" font-size="34" font-family="Segoe UI, Roboto" fill="#7b3e20">Dryfruits & Nuts</text>
+    <g transform="translate(80,220)">
+      <rect x="0" y="0" width="260" height="120" rx="12" fill="#fbe6d6"/>
+      <text x="12" y="46" font-size="18" fill="#5a3a25">Almonds • Cashews • Raisins</text>
+    </g>
+  </g>
+  <text x="560" y="480" font-size="26" fill="#5a3a25">Premium dryfruits — Natural & Clean</text>
+</svg>

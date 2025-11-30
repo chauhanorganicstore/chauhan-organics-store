@@ -1,1 +1,50 @@
-﻿
+﻿[
+  {
+    "id": "sugarcane-jaggery-1",
+    "name": "Organic Jaggery Powder",
+    "category": "sugarcane",
+    "price": 180,
+    "description": "Pure organic jaggery powder made from local sugarcane — no chemicals.",
+    "image": "/images/sugarcane.svg"
+  },
+  {
+    "id": "a2-ghee-500",
+    "name": "A2 Cow Ghee 500ml",
+    "category": "a2ghee",
+    "price": 650,
+    "description": "Traditional A2 ghee from desi cow milk — rich flavor, natural goodness.",
+    "image": "/images/a2ghee.svg"
+  },
+  {
+    "id": "atta-10kg",
+    "name": "Whole Wheat Atta 10kg",
+    "category": "atta",
+    "price": 420,
+    "description": "Stone-ground whole wheat atta — high fibre, fresh.",
+    "image": "/images/atta.svg"
+  },
+  {
+    "id": "pulses-mix-1kg",
+    "name": "Mixed Pulses 1kg",
+    "category": "pulses",
+    "price": 140,
+    "description": "Clean and graded mixed dals — protein rich.",
+    "image": "/images/pulses.svg"
+  },
+  {
+    "id": "dryfruits-premium-500",
+    "name": "Premium Dryfruits 500g",
+    "category": "dryfruits",
+    "price": 900,
+    "description": "Almonds, cashews and raisins — handpicked and cleaned.",
+    "image": "/images/dryfruits.svg"
+  },
+  {
+    "id": "coldpress-oil-1l",
+    "name": "Cold-pressed Mustard Oil 1L",
+    "category": "oils",
+    "price": 260,
+    "description": "First-cold pressed mustard oil — authentic taste.",
+    "image": "/images/oils.svg"
+  }
+]

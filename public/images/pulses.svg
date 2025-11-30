@@ -1,0 +1,11 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="100%" height="100%" fill="#f0f9ff"/>
+  <g transform="translate(120,100)">
+    <rect width="420" height="560" rx="22" fill="#fff" opacity="0.95"/>
+    <text x="30" y="60" font-size="34" font-family="Segoe UI, Roboto" fill="#15607a">Pulses & Dals</text>
+    <g transform="translate(80,220)">
+      <circle cx="40" cy="40" r="36" fill="#ffd8b1"/><circle cx="120" cy="40" r="36" fill="#ffd9a6"/><circle cx="200" cy="40" r="36" fill="#ffe9c9"/>
+    </g>
+  </g>
+  <text x="560" y="480" font-size="26" fill="#135a66">High-protein pulses — Clean & Dry</text>
+</svg>

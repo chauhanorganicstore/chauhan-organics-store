@@ -1,0 +1,9 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="100%" height="100%" fill="#fffaf0"/>
+  <g transform="translate(100,120)">
+    <rect width="420" height="560" rx="22" fill="#fff" opacity="0.95"/>
+    <text x="30" y="60" font-size="34" font-family="Segoe UI, Roboto" fill="#8b5a2b">Atta / Flour</text>
+    <path d="M90 280 q130 -160 240 0" fill="#f5e0c3" stroke="#e2b77a" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="560" y="480" font-size="26" fill="#6b4a2a">Freshly ground — Whole grain atta</text>
+</svg>
