@@ -1,12 +1,56 @@
 ﻿[
-  { "id": "p1", "title": "Organic A2 Ghee 500g", "brand": "Our Farm", "category": "Dairy", "price": 420, "image": "/images/placeholder1.jpg" },
-  { "id": "p2", "title": "Organic Jaggery Powder 1kg", "brand": "Chauhan Organics", "category": "Sweeteners", "price": 220, "image": "/images/placeholder2.jpg" },
-  { "id": "p3", "title": "Sugarcane Product - Khandasari 1kg", "brand": "Chauhan Organics", "category": "Sweeteners", "price": 150, "image": "/images/placeholder3.jpg" },
-  { "id": "p4", "title": "Organic Atta 5kg", "brand": "WholeGrain", "category": "Grains", "price": 400, "image": "/images/placeholder4.jpg" },
-  { "id": "p5", "title": "Organic Pulses 1kg", "brand": "PulsePure", "category": "Pulses", "price": 160, "image": "/images/placeholder5.jpg" },
-  { "id": "p6", "title": "Dry Fruits Mix 250g", "brand": "Nature's Basket", "category": "DryFruits", "price": 300, "image": "/images/placeholder6.jpg" },
-  { "id": "p7", "title": "Organic Mustard Oil 1L", "brand": "PressedWell", "category": "Oils", "price": 240, "image": "/images/placeholder7.jpg" },
-  { "id": "p8", "title": "Organic Honey 500g", "brand": "BeeGood", "category": "Sweeteners", "price": 320, "image": "/images/placeholder8.jpg" },
-  { "id": "p9", "title": "A2 Milk 1L (Organic)", "brand": "Our Farm", "category": "Dairy", "price": 95, "image": "/images/placeholder9.jpg" },
-  { "id": "p10", "title": "Sattu 1kg (Organic)", "brand": "Chauhan Organics", "category": "Grains", "price": 110, "image": "/images/placeholder10.jpg" }
+  {
+    "id": "p01",
+    "name": "Organic Jaggery Powder (500g)",
+    "category": "Sugarcane",
+    "price": 120,
+    "unit": "500g",
+    "image": "/images/jaggery_powder_500g.jpg",
+    "description": "Pure organic gur, traditional cold-processed jaggery powder."
+  },
+  {
+    "id": "p02",
+    "name": "Organic Jaggery Cube (1kg)",
+    "category": "Sugarcane",
+    "price": 220,
+    "unit": "1kg",
+    "image": "/images/jaggery_cube_1kg.jpg",
+    "description": "Hand-pressed jaggery cubes — natural and chemical-free."
+  },
+  {
+    "id": "p03",
+    "name": "A2 Ghee (500ml)",
+    "category": "A2 Ghee",
+    "price": 450,
+    "unit": "500ml",
+    "image": "/images/a2_ghee_500ml.jpg",
+    "description": "Desi A2 cow ghee, slow-cooked for authentic flavour."
+  },
+  {
+    "id": "p04",
+    "name": "Atta (Whole Wheat, 5kg)",
+    "category": "Atta",
+    "price": 260,
+    "unit": "5kg",
+    "image": "/images/atta_5kg.jpg",
+    "description": "100% whole wheat atta, stone-milled for better fibre retention."
+  },
+  {
+    "id": "p05",
+    "name": "Organic Pulses Mix (1kg)",
+    "category": "Pulses",
+    "price": 180,
+    "unit": "1kg",
+    "image": "/images/pulses_mix_1kg.jpg",
+    "description": "Mixed organic dal pack — chana, moong, arhar blend."
+  },
+  {
+    "id": "p06",
+    "name": "Cold-Pressed Mustard Oil (1L)",
+    "category": "Oils",
+    "price": 320,
+    "unit": "1L",
+    "image": "/images/mustard_oil_1l.jpg",
+    "description": "Cold-pressed mustard oil, unrefined and rich in nutrients."
+  }
 ]
