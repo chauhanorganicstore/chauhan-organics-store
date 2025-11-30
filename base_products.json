@@ -1,0 +1,128 @@
+﻿[
+  {
+    "id": "organic-jaggery-powder",
+    "title": "Organic Jaggery Powder",
+    "price": 240,
+    "unit": "500g",
+    "category": "Sweeteners",
+    "image": "/images/jaggery-powder.jpg",
+    "description": "Pure organic jaggery."
+  },
+  {
+    "id": "cold-pressed-mustard-oil",
+    "title": "Cold-Pressed Mustard Oil",
+    "price": 350,
+    "unit": "1L",
+    "category": "Oils",
+    "image": "/images/mustard-oil-1.jpg",
+    "description": "Cold-pressed from organic mustard seeds."
+  },
+  {
+    "id": "organic-a2-ghee",
+    "title": "Organic A2 Ghee",
+    "price": 950,
+    "unit": "500ml",
+    "category": "Dairy",
+    "image": "/images/a2-ghee-1.jpg",
+    "description": "Premium A2 bilona ghee from grass-fed cows."
+  },
+  {
+    "id": "organic-jaggery-cube",
+    "title": "Organic Jaggery Cube",
+    "price": 180,
+    "unit": "250g",
+    "category": "Sweeteners",
+    "image": "/images/jaggery-cube.jpg",
+    "description": "Handmade organic jaggery cubes."
+  },
+  {
+    "id": "organic-honey-500g",
+    "title": "Organic Wildflower Honey",
+    "price": 420,
+    "unit": "500g",
+    "category": "Sweeteners",
+    "image": "/images/organic-honey-500g.jpg",
+    "description": "Pure wildflower honey — unprocessed, raw and jarred locally."
+  },
+  {
+    "id": "multi-grain-atta-1kg",
+    "title": "Multi-Grain Atta (Whole)",
+    "price": 160,
+    "unit": "1kg",
+    "category": "Flour & Grains",
+    "image": "/images/multi-grain-atta-1kg.jpg",
+    "description": "Stone-ground multi-grain atta with wheat, ragi, jowar & bajra."
+  },
+  {
+    "id": "sendha-namak-500g",
+    "title": "Sendha Namak (Rock Salt)",
+    "price": 60,
+    "unit": "500g",
+    "category": "Salt & Spices",
+    "image": "/images/sendha-namak-500g.jpg",
+    "description": "Natural rock salt — mineral rich, unrefined and hand-packed."
+  },
+  {
+    "id": "turmeric-250g",
+    "title": "Organic Turmeric Powder",
+    "price": 140,
+    "unit": "250g",
+    "category": "Spices",
+    "image": "/images/turmeric-250g.jpg",
+    "description": "High-curcumin turmeric, sun-dried and finely powdered."
+  },
+  {
+    "id": "ginger-garlic-pickle-300g",
+    "title": "Ginger Garlic Pickle (Homestyle)",
+    "price": 180,
+    "unit": "300g",
+    "category": "Pickles & Chutneys",
+    "image": "/images/ginger-garlic-pickle-300g.jpg",
+    "description": "Homestyle achar with mustard oil and traditional spices."
+  },
+  {
+    "id": "coconut-oil-500ml",
+    "title": "Cold-Pressed Coconut Oil",
+    "price": 420,
+    "unit": "500ml",
+    "category": "Oils",
+    "image": "/images/coconut-oil-500ml.jpg",
+    "description": "Unrefined virgin coconut oil — multi-purpose for cooking & skin."
+  },
+  {
+    "id": "ragi-flour-500g",
+    "title": "Finger Millet (Ragi) Flour",
+    "price": 95,
+    "unit": "500g",
+    "category": "Flour & Grains",
+    "image": "/images/ragi-flour-500g.jpg",
+    "description": "Nutrient dense ragi flour — ideal for porridge and rotis."
+  },
+  {
+    "id": "herbal-tea-50g",
+    "title": "Herbal Detox Tea Blend",
+    "price": 199,
+    "unit": "50g",
+    "category": "Beverages & Tea",
+    "image": "/images/herbal-tea-50g.jpg",
+    "description": "Loose leaf blend — tulsi, ginger, cinnamon and lemongrass."
+  },
+  {
+    "id": "mustard-seeds-250g",
+    "title": "Organic Mustard Seeds",
+    "price": 120,
+    "unit": "250g",
+    "category": "Seeds & Staples",
+    "image": "/images/mustard-seeds-250g.jpg",
+    "description": "Small brown mustard seeds for pickling and tempering."
+  },
+  {
+    "id": "rajgira-flour-500g",
+    "title": "Rajgira Flour (Amaranth)",
+    "price": 210,
+    "unit": "500g",
+    "category": "Flour & Grains",
+    "image": "/images/rajgira-flour-500g.jpg",
+    "description": "Gluten-free amaranth flour — good for fasting recipes and baking."
+  }
+]
