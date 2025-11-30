@@ -1,30 +1,41 @@
-// src/components/ProductDescriptionGenerator.jsx
-import React, { useState } from "react";
-import { aiChat } from "../utils/ai";
+﻿import React, { useState } from "react";
 
 export default function ProductDescriptionGenerator({ product, onSaveText }) {
+  const [text, setText] = useState(product?.description || "");
   const [loading, setLoading] = useState(false);
-  const [generated, setGenerated] = useState("");
 
   async function generate() {
     setLoading(true);
-    try {
-      const prompt = `Write a short (40-70 words) SEO-friendly Hindi product description for the following organic product. Keep it persuasive and include keywords: organic, natural, healthy.\n\nProduct: ${product.title}\nCategory: ${product.category}\nFeatures: ${product.description || ""}\nPrice: ?${product.price} / ${product.unit}`;
-      const messages = [{role:"system", content:"You are a helpful writing assistant."},{role:"user", content:prompt}];
-      const { text } = await aiChat(messages, 300);
-      setGenerated(text);
-    } catch (e) {
-      setGenerated("Error: " + e.message);
-    } finally { setLoading(false); }
+    const res = await fetch("/api/ai-proxy", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        prompt: `Write a good product description for: ${product?.name}`
+      })
+    });
+
+    const data = await res.json();
+    setText(data.reply);
+    setLoading(false);
   }
 
   return (
-    <div style={{ padding:8, background:"#fff", borderRadius:8 }}>
-      <div style={{ display:"flex", gap:8 }}>
-        <button onClick={generate} disabled={loading}>{loading ? "Generating..." : "Generate Description (AI)"}</button>
-        <button onClick={()=>{ if(onSaveText && generated) onSaveText(generated) }}>Use & Save</button>
-      </div>
-      {generated ? <pre style={{ whiteSpace:"pre-wrap", marginTop:8 }}>{generated}</pre> : null}
+    <div style={{ border: "1px solid #aaa", padding: 10, marginTop: 20 }}>
+      <h3>AI Description Generator</h3>
+      <textarea
+        rows="6"
+        style={{ width: "100%" }}
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+      />
+
+      <button onClick={generate} disabled={loading}>
+        {loading ? "Generating..." : "Generate with AI"}
+      </button>
+
+      <button onClick={() => onSaveText(text)} style={{ marginLeft: 10 }}>
+        Save
+      </button>
     </div>
   );
 }
