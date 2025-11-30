@@ -1,5 +1,6 @@
 ﻿import React, { useEffect, useState } from "react";
 import MainLayout from "../layouts/MainLayout";
+import Seo from "../components/Seo";
 
 export default function ProductsPage() {
   const [products, setProducts] = useState([]);
@@ -21,11 +22,29 @@ export default function ProductsPage() {
     return matchCat && matchQ;
   });
 
+  // build ItemList JSON-LD
+  const listSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Chauhan Organic Store Products",
+    "description": "Organic products — sugarcane, A2 ghee, atta, pulses, dryfruits, oils.",
+    "itemListElement": filtered.slice(0, 50).map((p, idx) => ({
+      "@type": "ListItem",
+      "position": idx + 1,
+      "url": `${typeof window !== "undefined" ? window.location.origin : ""}/product/${p.id}`,
+      "name": p.name
+    }))
+  };
+
+  const pageTitle = "Products — Chauhan Organic Store (Panipat)";
+  const pageDesc = "Shop organic sugarcane products, A2 ghee, atta, pulses, dryfruits and cold-pressed oils from Chauhan Organic Store.";
+
   return (
     <MainLayout isAdmin={false} product={null} products={products}>
+      <Seo title={pageTitle} description={pageDesc} url={(typeof window !== "undefined" ? window.location.href : "/products")} image="/images/placeholder.svg" schema={listSchema} />
       <div style={{maxWidth:1100, margin:"28px auto", padding:"0 16px"}}>
         <header style={{display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:18}}>
-          <h1 style={{margin:0}}>Products</h1>
+          <h1 style={{margin:0}}>{pageTitle}</h1>
           <div style={{display:"flex", gap:8}}>
             <input placeholder="Search products..." value={q} onChange={(e)=>setQ(e.target.value)}
               style={{padding:8, borderRadius:8, border:"1px solid #ddd", width:260}} />
