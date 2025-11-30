@@ -42,6 +42,64 @@
     "price": 180,
     "unit": "1kg",
     "image": "/images/pulses_mix_1kg.jpg",
+    "description": "Mixed organic dal pack — chana, moong, arhar b
+cd C:\Users\DELL\organicstore
+
+# -------------------------
+# 1) ensure folders exist
+# -------------------------
+New-Item -ItemType Directory -Path .\public\data -Force | Out-Null
+New-Item -ItemType Directory -Path .\public\images -Force | Out-Null
+New-Item -ItemType Directory -Path .\src\pages -Force | Out-Null
+
+# -------------------------
+# 2) write core products JSON
+# -------------------------
+$productsJson = @'
+[
+  {
+    "id": "p01",
+    "name": "Organic Jaggery Powder (500g)",
+    "category": "Sugarcane",
+    "price": 120,
+    "unit": "500g",
+    "image": "/images/jaggery_powder_500g.jpg",
+    "description": "Pure organic gur, traditional cold-processed jaggery powder."
+  },
+  {
+    "id": "p02",
+    "name": "Organic Jaggery Cube (1kg)",
+    "category": "Sugarcane",
+    "price": 220,
+    "unit": "1kg",
+    "image": "/images/jaggery_cube_1kg.jpg",
+    "description": "Hand-pressed jaggery cubes — natural and chemical-free."
+  },
+  {
+    "id": "p03",
+    "name": "A2 Ghee (500ml)",
+    "category": "A2 Ghee",
+    "price": 450,
+    "unit": "500ml",
+    "image": "/images/a2_ghee_500ml.jpg",
+    "description": "Desi A2 cow ghee, slow-cooked for authentic flavour."
+  },
+  {
+    "id": "p04",
+    "name": "Atta (Whole Wheat, 5kg)",
+    "category": "Atta",
+    "price": 260,
+    "unit": "5kg",
+    "image": "/images/atta_5kg.jpg",
+    "description": "100% whole wheat atta, stone-milled for better fibre retention."
+  },
+  {
+    "id": "p05",
+    "name": "Organic Pulses Mix (1kg)",
+    "category": "Pulses",
+    "price": 180,
+    "unit": "1kg",
+    "image": "/images/pulses_mix_1kg.jpg",
     "description": "Mixed organic dal pack — chana, moong, arhar blend."
   },
   {

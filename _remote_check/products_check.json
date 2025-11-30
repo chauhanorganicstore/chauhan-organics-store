@@ -1,0 +1,12 @@
+﻿[
+  { "id": "p1", "title": "Organic A2 Ghee 500g", "brand": "Our Farm", "category": "Dairy", "price": 420, "image": "/images/placeholder1.jpg" },
+  { "id": "p2", "title": "Organic Jaggery Powder 1kg", "brand": "Chauhan Organics", "category": "Sweeteners", "price": 220, "image": "/images/placeholder2.jpg" },
+  { "id": "p3", "title": "Sugarcane Product - Khandasari 1kg", "brand": "Chauhan Organics", "category": "Sweeteners", "price": 150, "image": "/images/placeholder3.jpg" },
+  { "id": "p4", "title": "Organic Atta 5kg", "brand": "WholeGrain", "category": "Grains", "price": 400, "image": "/images/placeholder4.jpg" },
+  { "id": "p5", "title": "Organic Pulses 1kg", "brand": "PulsePure", "category": "Pulses", "price": 160, "image": "/images/placeholder5.jpg" },
+  { "id": "p6", "title": "Dry Fruits Mix 250g", "brand": "Nature's Basket", "category": "DryFruits", "price": 300, "image": "/images/placeholder6.jpg" },
+  { "id": "p7", "title": "Organic Mustard Oil 1L", "brand": "PressedWell", "category": "Oils", "price": 240, "image": "/images/placeholder7.jpg" },
+  { "id": "p8", "title": "Organic Honey 500g", "brand": "BeeGood", "category": "Sweeteners", "price": 320, "image": "/images/placeholder8.jpg" },
+  { "id": "p9", "title": "A2 Milk 1L (Organic)", "brand": "Our Farm", "category": "Dairy", "price": 95, "image": "/images/placeholder9.jpg" },
+  { "id": "p10", "title": "Sattu 1kg (Organic)", "brand": "Chauhan Organics", "category": "Grains", "price": 110, "image": "/images/placeholder10.jpg" }
+]
