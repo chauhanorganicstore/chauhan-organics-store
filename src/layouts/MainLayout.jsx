@@ -1,29 +1,45 @@
-﻿import React from "react";
+﻿import React, { useEffect, useState } from "react";
 import AIChatbot from "../components/AIChatbot";
 import ProductRecommendation from "../components/ProductRecommendation";
 import ProductDescriptionGenerator from "../components/ProductDescriptionGenerator";
 import SiteInfo from "../components/SiteInfo";
+import Cart from "../components/Cart";
+import { getCount } from "../utils/cart";
 
 export default function MainLayout({ children, isAdmin, product, products }) {
+  const [cartOpen, setCartOpen] = useState(false);
+  const [count, setCount] = useState(typeof window !== "undefined" ? getCount() : 0);
+
+  useEffect(() => {
+    function handler() {
+      setCount(getCount());
+    }
+    window.addEventListener("cartUpdated", handler);
+    return () => window.removeEventListener("cartUpdated", handler);
+  }, []);
+
   return (
     <div style={{fontFamily:"system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial"}}>
       <header style={{
         display:"flex", justifyContent:"space-between", alignItems:"center",
-        padding:"18px 24px", borderBottom:"1px solid #eee", background:"#fff"
+        padding:"12px 18px", borderBottom:"1px solid #eee", background:"#fff", position:"sticky", top:0, zIndex:50
       }}>
         <div style={{display:"flex", alignItems:"center", gap:12}}>
-          <img src="/logo.png" alt="logo" style={{width:48, height:48, objectFit:"contain"}}/>
+          <img src="/logo.png" alt="logo" style={{width:44, height:44, objectFit:"contain"}}/>
           <div>
             <div style={{fontSize:18, fontWeight:700}}>Chauhan Organic Store</div>
             <div style={{fontSize:12, color:"#666"}}>Panipat, Haryana • Organic & Natural</div>
           </div>
         </div>
 
-        <nav style={{display:"flex", gap:12}}>
+        <nav style={{display:"flex", gap:12, alignItems:"center"}}>
           <a href="/" style={{textDecoration:"none", color:"#111"}}>Home</a>
           <a href="/products" style={{textDecoration:"none", color:"#111"}}>Products</a>
           <a href="/contact" style={{textDecoration:"none", color:"#111"}}>Contact</a>
-          <a href="#ai-tools" style={{textDecoration:"none", color:"#111"}}>AI Tools</a>
+
+          <button onClick={()=>setCartOpen(true)} style={{position:"relative", padding:"8px 10px", borderRadius:8, background:"#fff", border:"1px solid #ddd", cursor:"pointer"}}>
+            Cart {count > 0 && <span style={{background:"#ff3b30", color:"#fff", borderRadius:10, padding:"2px 6px", marginLeft:8, fontSize:12}}>{count}</span>}
+          </button>
         </nav>
       </header>
 
@@ -83,6 +99,8 @@ export default function MainLayout({ children, isAdmin, product, products }) {
           </div>
         </div>
       </footer>
+
+      <Cart open={cartOpen} onClose={()=>setCartOpen(false)} />
     </div>
   );
 }

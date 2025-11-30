@@ -1,12 +1,12 @@
 ﻿import React, { useEffect, useState } from "react";
 import MainLayout from "../../layouts/MainLayout";
 import Seo from "../../components/Seo";
+import { addToCart } from "../../utils/cart";
 
 export default function ProductPage({ product, products }) {
   const [isAdmin] = useState(false);
   const [prod, setProd] = useState(product);
 
-  // if product is not passed via props, try client fetch by id from url
   useEffect(() => {
     if (!prod) {
       const id = typeof window !== "undefined" ? window.location.pathname.split("/").pop() : null;
@@ -52,7 +52,10 @@ export default function ProductPage({ product, products }) {
           <h1 style={{marginTop:0}}>{prod?.name}</h1>
           <div style={{color:"#444", marginBottom:12}}>{prod?.description}</div>
           <div style={{fontSize:22, fontWeight:700, marginBottom:12}}>₹ {prod?.price}</div>
-          <button style={{padding:"10px 14px", borderRadius:8, background:"#0b74ff", color:"#fff", border:"none"}}>Add to cart</button>
+          <div style={{display:"flex", gap:8}}>
+            <button onClick={()=>addToCart(prod,1)} style={{padding:"10px 14px", borderRadius:8, background:"#0b74ff", color:"#fff", border:"none"}}>Add to cart</button>
+            <a href="#ai-tools" style={{padding:"10px 14px", borderRadius:8, background:"#34a853", color:"#fff", textDecoration:"none"}}>Try AI Tools</a>
+          </div>
         </div>
       </article>
     </MainLayout>

@@ -1,42 +1,60 @@
-/**
- * src/utils/cart.js
- * Simple localStorage-based cart utilities
- * Works in browser only. If using SSR (Next.js) guard with typeof window !== "undefined".
+﻿/**
+ * simple cart utility using localStorage + window CustomEvent('cartUpdated')
+ * methods: getCart(), addToCart(item), removeFromCart(id), clearCart()
  */
+const KEY = "organic_cart_v1";
 
-export function addToCart(product) {
-  if (typeof window === "undefined") return;
-  const cart = JSON.parse(localStorage.getItem("cart") || "[]");
-  const existing = cart.find(p => p.id === product.id);
-  if (existing) {
-    existing.qty = (existing.qty || 1) + 1;
-  } else {
-    cart.push({ ...product, qty: 1 });
+function read() {
+  try {
+    const raw = localStorage.getItem(KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    return [];
   }
-  localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-export function removeFromCart(productId) {
-  if (typeof window === "undefined") return;
-  const cart = JSON.parse(localStorage.getItem("cart") || "[]");
-  const updated = cart.filter(p => p.id !== productId);
-  localStorage.setItem("cart", JSON.stringify(updated));
-}
-
-export function updateQty(productId, qty) {
-  if (typeof window === "undefined") return;
-  const cart = JSON.parse(localStorage.getItem("cart") || "[]");
-  const item = cart.find(p => p.id === productId);
-  if (item) item.qty = qty;
-  localStorage.setItem("cart", JSON.stringify(cart));
+function write(items) {
+  localStorage.setItem(KEY, JSON.stringify(items || []));
+  // notify listeners
+  window.dispatchEvent(new CustomEvent("cartUpdated", { detail: { count: getCount() } }));
 }
 
 export function getCart() {
-  if (typeof window === "undefined") return [];
-  return JSON.parse(localStorage.getItem("cart") || "[]");
+  return read();
+}
+
+export function getCount() {
+  const items = read();
+  return items.reduce((s, it) => s + (it.qty || 1), 0);
+}
+
+export function addToCart(product, qty = 1) {
+  if (!product || !product.id) return;
+  const items = read();
+  const idx = items.findIndex((i) => i.id === product.id);
+  if (idx >= 0) {
+    items[idx].qty = (items[idx].qty || 1) + qty;
+  } else {
+    items.push({ id: product.id, name: product.name, price: product.price, image: product.image, qty });
+  }
+  write(items);
+}
+
+export function removeFromCart(id) {
+  const items = read().filter((i) => i.id !== id);
+  write(items);
+}
+
+export function updateQty(id, qty) {
+  const items = read();
+  const idx = items.findIndex((i) => i.id === id);
+  if (idx >= 0) {
+    items[idx].qty = qty;
+    if (items[idx].qty <= 0) items.splice(idx, 1);
+    write(items);
+  }
 }
 
 export function clearCart() {
-  if (typeof window === "undefined") return;
-  localStorage.removeItem("cart");
+  write([]);
 }

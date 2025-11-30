@@ -1,6 +1,7 @@
 ﻿import React, { useEffect, useState } from "react";
 import MainLayout from "../layouts/MainLayout";
 import Seo from "../components/Seo";
+import { addToCart } from "../utils/cart";
 
 export default function ProductsPage() {
   const [products, setProducts] = useState([]);
@@ -22,12 +23,10 @@ export default function ProductsPage() {
     return matchCat && matchQ;
   });
 
-  // build ItemList JSON-LD
   const listSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
     "name": "Chauhan Organic Store Products",
-    "description": "Organic products — sugarcane, A2 ghee, atta, pulses, dryfruits, oils.",
     "itemListElement": filtered.slice(0, 50).map((p, idx) => ({
       "@type": "ListItem",
       "position": idx + 1,
@@ -72,7 +71,7 @@ export default function ProductsPage() {
                 <div style={{fontWeight:700}}>₹ {p.price}</div>
                 <div style={{display:"flex", gap:8}}>
                   <a href={"/product/" + p.id} style={{padding:"8px 10px", borderRadius:8, background:"#0b74ff", color:"#fff", textDecoration:"none"}}>View</a>
-                  <button style={{padding:"8px 10px", borderRadius:8, border:"1px solid #ddd"}}>Add</button>
+                  <button onClick={()=>addToCart(p,1)} style={{padding:"8px 10px", borderRadius:8, border:"1px solid #ddd"}}>Add</button>
                 </div>
               </div>
             </article>
