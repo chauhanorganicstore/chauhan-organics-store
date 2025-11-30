@@ -1,0 +1,26 @@
+﻿name: Notify on site update
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create-deploy-notice:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create a GitHub Issue for deployment notification
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          REF: ${{ github.ref }}
+          SHA: ${{ github.sha }}
+          ACTOR: ${{ github.actor }}
+          SITE_URL: "https://chauhan-organics-store.vercel.app"
+        run: |
+          TIMESTAMP="$(date -u +"%Y-%m-%d %H:%M UTC")"
+          TITLE="Site updated — ${REF} by ${ACTOR}"
+          BODY="**Deployment / Push detected**`n`n**Repository:** ${REPO}`n**Ref:** ${REF}`n**Commit:** https://github.com/${REPO}/commit/${SHA}`n**Pushed by:** ${ACTOR}`n**Site:** ${SITE_URL}`n**Time:** ${TIMESTAMP}"
+          JSON_PAYLOAD=$(printf '{"title":"%s","body":"%s","labels":["deployment"]}' "$TITLE" "$BODY")
+          curl -s -S -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/${REPO}/issues -d "$JSON_PAYLOAD"
