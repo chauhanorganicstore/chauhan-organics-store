@@ -1,7 +1,3 @@
 ﻿export default function Store() {
-  return (
-    <div style={{padding: 40, fontSize: "22px"}}>
-      🛒 Store Page Loaded — Route Working ✔️
-    </div>
-  );
+  return <div style={{padding:40}}>🛒 Store Page Loaded — Route Working ✔️</div>;
 }
