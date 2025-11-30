@@ -1,4 +1,4 @@
-﻿// Minimal Next config (keeps defaults). Add options here if needed.
+﻿/** Minimal CommonJS Next config (safe for package.json type: module) */
 module.exports = {
   reactStrictMode: true,
 };
